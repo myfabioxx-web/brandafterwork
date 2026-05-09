@@ -1,9 +1,12 @@
-import React from "react"; import { motion } from "framer-motion"; import { ArrowRight, Headphones, Sparkles, Brain, TrendingUp, Radio, Globe2, Cpu, Coins, Zap, PlayCircle } from "lucide-react";
+import React, { useState } from "react"; import { motion } from "framer-motion"; import { ArrowRight, Headphones, Sparkles, Facebook, Youtube, Brain, TrendingUp, Radio, Globe2, Cpu, Coins, Zap, Menu, X, } from "lucide-react";
+
 const articles = [ { title: "AI เปลี่ยนโลกการทำงานไปแล้ว", tag: "AI / เทคโนโลยี", desc: "เราอาจเริ่มตัวช้าไปโดยไม่รู้ตัว", icon: Cpu, gradient: "from-cyan-400/35 via-blue-900/30 to-slate-950", }, { title: "ทองคำยังน่าลงทุนอยู่ไหมตอนนี้?", tag: "การลงทุน", desc: "วิเคราะห์แนวโน้มราคาทองคำและปัจจัยสำคัญ", icon: Coins, gradient: "from-yellow-300/40 via-amber-700/25 to-slate-950", }, { title: "โลกในอีก 10 ปีข้างหน้า จะเป็นยังไง?", tag: "อนาคต", desc: "เทรนด์อนาคตที่น่าจับตามอง", icon: Brain, gradient: "from-indigo-400/35 via-cyan-900/30 to-slate-950", }, { title: "เศรษฐกิจโลกกำลังเปลี่ยนทิศ", tag: "เศรษฐกิจ", desc: "อะไรคือความเสี่ยง และโอกาสของคนไทย", icon: Globe2, gradient: "from-emerald-400/30 via-blue-900/25 to-slate-950", }, ];
 
 const features = [ { icon: Brain, title: "ย่อยเรื่องยาก", desc: "เปลี่ยนข่าวซับซ้อนให้กลายเป็นภาษาคนทำงาน อ่านง่าย ฟังง่าย" }, { icon: TrendingUp, title: "ทันกระแสโลก", desc: "จับประเด็น AI หุ้น เทคโนโลยี และเศรษฐกิจที่ควรรู้" }, { icon: Radio, title: "คอนเทนต์สั้น", desc: "บทความและพอดแคสต์ที่เข้าใจได้ในเวลาไม่กี่นาที" }, ];
 
-export default function App() { return ( <main className="min-h-screen overflow-hidden bg-[#030712] text-white"> <div className="fixed inset-0 -z-10"> <div className="absolute top-[-180px] right-[-120px] h-[520px] w-[520px] rounded-full bg-cyan-500/20 blur-[140px]" /> <div className="absolute bottom-[-200px] left-[-120px] h-[540px] w-[540px] rounded-full bg-indigo-700/25 blur-[150px]" /> <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.028)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.028)_1px,transparent_1px)] bg-[size:64px_64px]" /> </div>
+export default function App() { const [menuOpen, setMenuOpen] = useState(false);
+
+return ( <main className="min-h-screen overflow-hidden bg-[#030712] text-white"> <div className="fixed inset-0 -z-10"> <div className="absolute top-[-180px] right-[-120px] h-[520px] w-[520px] rounded-full bg-cyan-500/20 blur-[140px]" /> <div className="absolute bottom-[-200px] left-[-120px] h-[540px] w-[540px] rounded-full bg-indigo-700/25 blur-[150px]" /> <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.028)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.028)_1px,transparent_1px)] bg-[size:64px_64px]" /> </div>
 
 <header className="sticky top-0 z-50 border-b border-white/10 bg-[#030712]/75 backdrop-blur-xl">
     <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
@@ -23,7 +26,25 @@ export default function App() { return ( <main className="min-h-screen overflow-
         <a href="#podcast" className="no-underline hover:text-white">พอดแคสต์</a>
         <a href="#about" className="no-underline hover:text-white">เกี่ยวกับเรา</a>
       </nav>
+
+      <button
+        onClick={() => setMenuOpen(!menuOpen)}
+        className="flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-white md:hidden"
+        aria-label="Toggle menu"
+      >
+        {menuOpen ? <X size={22} /> : <Menu size={22} />}
+      </button>
     </div>
+  {menuOpen && (
+      <div className="border-t border-white/10 bg-[#030712]/95 px-5 py-4 md:hidden">
+        <div className="grid gap-3 text-sm font-bold text-slate-200">
+          <a onClick={() => setMenuOpen(false)} href="#top" className="rounded-2xl bg-white/5 px-4 py-3 text-yellow-300 no-underline">หน้าแรก</a>
+          <a onClick={() => setMenuOpen(false)} href="#articles" className="rounded-2xl bg-white/5 px-4 py-3 no-underline">บทความ</a>
+          <a onClick={() => setMenuOpen(false)} href="#podcast" className="rounded-2xl bg-white/5 px-4 py-3 no-underline">พอดแคสต์</a>
+          <a onClick={() => setMenuOpen(false)} href="#about" className="rounded-2xl bg-white/5 px-4 py-3 no-underline">เกี่ยวกับเรา</a>
+        </div>
+      </div>
+    )}
   </header>
 
   <section id="top" className="mx-auto grid max-w-7xl items-center gap-10 px-5 pb-14 pt-14 lg:grid-cols-[1.05fr_0.95fr] lg:pt-20">
@@ -54,8 +75,8 @@ export default function App() { return ( <main className="min-h-screen overflow-
 
       <div className="mt-8 flex items-center gap-4">
         <p className="text-sm font-bold text-slate-300">ติดตามเรา</p>
-        <a href="#follow" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white no-underline hover:bg-yellow-300 hover:text-slate-950"><PlayCircle size={18} /></a>
-        <a href="#follow" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white no-underline hover:bg-yellow-300 hover:text-slate-950"><Brain size={18} /></a>
+        <a href="#follow" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white no-underline hover:bg-yellow-300 hover:text-slate-950"><Youtube size={18} /></a>
+        <a href="#follow" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white no-underline hover:bg-yellow-300 hover:text-slate-950"><Facebook size={18} /></a>
         <a href="#follow" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white no-underline hover:bg-yellow-300 hover:text-slate-950"><Headphones size={18} /></a>
       </div>
     </motion.div>
