@@ -1,114 +1,169 @@
-import React from "react"; import { motion } from "framer-motion"; import { ArrowRight, Headphones, Newspaper, Sparkles, PlayCircle, Facebook, Youtube, Brain, TrendingUp, Radio, Mail, } from "lucide-react";
+import React from "react"; import { motion } from "framer-motion"; import { ArrowRight, Headphones, Sparkles, PlayCircle, Facebook, Youtube, Brain, TrendingUp, Radio, Globe2, Mic2, Cpu, Coins, Zap, } from "lucide-react";
 
-const articles = [ { title: "ทำไมคนรวยทั่วโลก เริ่มซื้อทองคำอีกครั้ง", tag: "Finance", desc: "เมื่อโลกไม่แน่นอน สินทรัพย์ปลอดภัยจึงกลับมาอยู่ในสายตานักลงทุน", gradient: "from-yellow-400/30 via-amber-700/20 to-slate-950", }, { title: "10 หุ้น AI ที่คนพูดถึงมากสุดตอนนี้", tag: "AI Stocks", desc: "สรุปกระแสหุ้นเทคโนโลยีที่กำลังถูกจับตาในตลาดโลก", gradient: "from-cyan-400/25 via-blue-800/20 to-slate-950", }, { title: "ประเทศไทยกำลังตาม AI ทัน หรือถูกทิ้งไว้ข้างหลัง", tag: "AI Thailand", desc: "มองอนาคตแรงงาน ธุรกิจ และโอกาสของไทยในยุคปัญญาประดิษฐ์", gradient: "from-indigo-400/30 via-cyan-900/20 to-slate-950", }, ];
+const socials = [ { name: "YouTube", icon: Youtube }, { name: "Facebook", icon: Facebook }, { name: "Podcast", icon: Headphones }, ];
+
+const articles = [ { title: "AI เปลี่ยนโลกการทำงานไปแล้ว", tag: "AI / เทคโนโลยี", desc: "เราอาจเริ่มตัวช้าไปโดยไม่รู้ตัว", icon: Cpu, gradient: "from-cyan-400/35 via-blue-900/30 to-slate-950", }, { title: "ทองคำยังน่าลงทุนอยู่ไหมตอนนี้?", tag: "การลงทุน", desc: "วิเคราะห์แนวโน้มราคาทองคำและปัจจัยสำคัญ", icon: Coins, gradient: "from-yellow-300/40 via-amber-700/25 to-slate-950", }, { title: "โลกในอีก 10 ปีข้างหน้า จะเป็นยังไง?", tag: "อนาคต", desc: "เทรนด์อนาคตที่น่าจับตามอง", icon: Brain, gradient: "from-indigo-400/35 via-cyan-900/30 to-slate-950", }, { title: "เศรษฐกิจโลกกำลังเปลี่ยนทิศ", tag: "เศรษฐกิจ", desc: "อะไรคือความเสี่ยง และโอกาสของคนไทย", icon: Globe2, gradient: "from-emerald-400/30 via-blue-900/25 to-slate-950", }, ];
 
 const features = [ { icon: Brain, title: "ย่อยเรื่องยาก", desc: "เปลี่ยนข่าวซับซ้อนให้กลายเป็นภาษาคนทำงาน อ่านง่าย ฟังง่าย", }, { icon: TrendingUp, title: "ทันกระแสโลก", desc: "จับประเด็น AI หุ้น เทคโนโลยี และเศรษฐกิจที่ควรรู้", }, { icon: Radio, title: "คอนเทนต์สั้น", desc: "บทความและพอดแคสต์ที่เข้าใจได้ในเวลาไม่กี่นาที", }, ];
 
-export default function App() { return ( <main className="min-h-screen bg-[#050816] text-white selection:bg-cyan-300 selection:text-slate-950 overflow-hidden"> <div className="fixed inset-0 -z-10"> <div className="absolute top-[-150px] right-[-120px] h-[420px] w-[420px] rounded-full bg-cyan-500/20 blur-[120px]" /> <div className="absolute bottom-[-160px] left-[-120px] h-[480px] w-[480px] rounded-full bg-indigo-600/25 blur-[140px]" /> <div className="absolute left-1/2 top-1/4 h-[320px] w-[320px] -translate-x-1/2 rounded-full bg-yellow-300/5 blur-[100px]" /> <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.025)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.025)_1px,transparent_1px)] bg-[size:56px_56px]" /> <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(30,64,175,0.28),transparent_36%),linear-gradient(180deg,rgba(5,8,22,0.08),#050816_82%)]" /> </div>
+export default function App() { return ( <main className="min-h-screen bg-[#030712] text-white selection:bg-yellow-300 selection:text-slate-950 overflow-hidden"> <div className="fixed inset-0 -z-10"> <div className="absolute top-[-180px] right-[-120px] h-[520px] w-[520px] rounded-full bg-cyan-500/20 blur-[140px]" /> <div className="absolute bottom-[-200px] left-[-120px] h-[540px] w-[540px] rounded-full bg-indigo-700/25 blur-[150px]" /> <div className="absolute left-1/2 top-1/4 h-[340px] w-[340px] -translate-x-1/2 rounded-full bg-yellow-300/8 blur-[110px]" /> <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.028)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.028)_1px,transparent_1px)] bg-[size:64px_64px]" /> <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_20%,rgba(14,165,233,0.20),transparent_34%),linear-gradient(180deg,rgba(3,7,18,0.05),#030712_86%)]" /> </div>
 
-<header className="sticky top-0 z-50 border-b border-white/10 bg-[#050816]/70 backdrop-blur-xl">
-    <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+<header className="sticky top-0 z-50 border-b border-white/10 bg-[#030712]/70 backdrop-blur-xl">
+    <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
       <a href="#top" className="flex items-center gap-3">
-        <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-br from-yellow-300 to-cyan-300 text-black shadow-lg shadow-cyan-500/20">
-          <Sparkles size={20} />
+        <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-yellow-300/30 bg-yellow-300/10 text-yellow-300 shadow-lg shadow-yellow-500/10">
+          <Brain size={23} />
         </div>
         <div>
-          <p className="text-base font-black tracking-wide">สมองหลังเลิกงาน</p>
-          <p className="text-xs text-slate-400">Brain After Work</p>
+          <p className="text-lg font-black tracking-wide">สมองหลังเลิกงาน</p>
+          <p className="text-xs font-semibold text-slate-400">Content • Podcast • Ideas</p>
         </div>
       </a>
 
-      <nav className="hidden items-center gap-7 text-sm text-slate-300 md:flex">
+      <nav className="hidden items-center gap-8 text-sm font-semibold text-slate-300 md:flex">
+        <a href="#top" className="text-yellow-300">หน้าแรก</a>
         <a href="#articles" className="transition hover:text-white">บทความ</a>
-        <a href="#podcast" className="transition hover:text-white">Podcast</a>
-        <a href="#about" className="transition hover:text-white">เกี่ยวกับเพจ</a>
-        <a href="#follow" className="rounded-full border border-cyan-200/20 px-4 py-2 text-cyan-100 transition hover:bg-cyan-300 hover:text-slate-950">ติดตาม</a>
+        <a href="#podcast" className="transition hover:text-white">พอดแคสต์</a>
+        <a href="#about" className="transition hover:text-white">เกี่ยวกับเรา</a>
+        <a href="#follow" className="rounded-full border border-yellow-300/25 px-4 py-2 text-yellow-200 transition hover:bg-yellow-300 hover:text-slate-950">ติดตามเรา</a>
       </nav>
     </div>
   </header>
 
-  <section id="top" className="mx-auto grid max-w-6xl items-center gap-10 px-5 pb-20 pt-12 md:grid-cols-2 md:pb-28 md:pt-24">
-    <motion.div
-      initial={{ opacity: 0, y: 24 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.7 }}
-    >
-      <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-cyan-300/20 bg-white/5 px-4 py-2 text-xs text-cyan-100 shadow-lg shadow-cyan-950/20 backdrop-blur">
-        <span className="h-2 w-2 animate-pulse rounded-full bg-cyan-300" />
-        AI • หุ้น • เทคโนโลยี • เรื่องใหญ่ที่เข้าใจง่าย
-      </div>
-
-      <h1 className="max-w-xl text-4xl font-black leading-tight tracking-tight md:text-6xl">
-        ตามโลกให้ทัน
-        <span className="block bg-gradient-to-r from-cyan-200 via-white to-yellow-200 bg-clip-text text-transparent">
-          หลังเลิกงาน
-        </span>
-      </h1>
-
-      <p className="mt-6 max-w-xl text-base leading-8 text-slate-300 md:text-lg">
-        สรุปข่าว AI หุ้น เทคโนโลยี และเศรษฐกิจ ให้เข้าใจง่ายในไม่กี่นาที
-        สำหรับคนทำงานที่อยากรู้ทันโลก แต่ไม่มีเวลานั่งอ่านยาวๆ
-      </p>
-
-      <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-        <a
-          href="#podcast"
-          className="inline-flex items-center justify-center gap-2 rounded-2xl bg-cyan-300 px-6 py-3 text-sm font-black text-slate-950 shadow-lg shadow-cyan-500/25 transition hover:scale-[1.02] hover:bg-cyan-200"
-        >
-          <Headphones size={18} /> ฟัง Podcast
-        </a>
-        <a
-          href="#articles"
-          className="inline-flex items-center justify-center gap-2 rounded-2xl border border-white/15 bg-white/5 px-6 py-3 text-sm font-bold text-white backdrop-blur transition hover:bg-white/10"
-        >
-          อ่านบทความ <ArrowRight size={18} />
-        </a>
-      </div>
-
-      <div className="mt-10 grid max-w-md grid-cols-3 gap-3 text-center">
-        <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
-          <p className="text-2xl font-black text-cyan-200">1 นาที</p>
-          <p className="mt-1 text-xs text-slate-400">ฟังจบไว</p>
+  <section id="top" className="relative mx-auto max-w-7xl px-5 pb-10 pt-12 md:pb-16 md:pt-20">
+    <div className="grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
+      <motion.div
+        initial={{ opacity: 0, y: 24 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+        className="relative z-10"
+      >
+        <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-yellow-300/25 bg-yellow-300/10 px-4 py-2 text-xs font-bold text-yellow-200 shadow-lg shadow-yellow-950/20 backdrop-blur">
+          <Sparkles size={15} />
+          คอนเทนต์สั้น เข้าใจง่าย ใช้ได้จริง
         </div>
-        <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
-          <p className="text-2xl font-black text-yellow-200">เข้าใจง่าย</p>
-          <p className="mt-1 text-xs text-slate-400">ไม่ต้องพื้นฐาน</p>
-        </div>
-        <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
-          <p className="text-2xl font-black text-cyan-200">ทันโลก</p>
-          <p className="mt-1 text-xs text-slate-400">ทุกประเด็นใหญ่</p>
-        </div>
-      </div>
-    </motion.div>
 
-    <motion.div
-      initial={{ opacity: 0, scale: 0.94 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.8, delay: 0.1 }}
-      className="relative"
-    >
-      <div className="absolute -inset-4 rounded-[2.5rem] bg-gradient-to-br from-cyan-400/20 to-yellow-300/10 blur-2xl" />
-      <div className="relative rounded-[2rem] border border-white/10 bg-white/[0.06] p-4 shadow-2xl shadow-cyan-900/30 backdrop-blur-xl">
-        <div className="rounded-[1.5rem] bg-gradient-to-br from-slate-950 via-indigo-950 to-cyan-950 p-6">
-          <div className="mb-20 flex items-center justify-between">
-            <span className="rounded-full bg-yellow-300 px-3 py-1 text-xs font-black text-black">NEW MEDIA</span>
-            <PlayCircle className="text-cyan-200" />
-          </div>
-          <h2 className="text-3xl font-black leading-tight">ข่าวใหญ่วันนี้<br />เล่าให้ฟังง่ายๆ</h2>
-          <p className="mt-4 text-sm leading-7 text-slate-300">
-            จากเรื่องซับซ้อนในตลาดโลก สู่คอนเทนต์สั้นที่เอาไปเล่าต่อได้ทันที
-          </p>
-          <div className="mt-8 grid grid-cols-3 gap-3 text-center text-xs">
-            <div className="rounded-2xl bg-white/10 p-3">AI</div>
-            <div className="rounded-2xl bg-white/10 p-3">Stocks</div>
-            <div className="rounded-2xl bg-white/10 p-3">Future</div>
+        <h1 className="max-w-3xl text-4xl font-black leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl xl:text-7xl">
+          เติมสมองหลังเลิกงาน
+          <span className="block bg-gradient-to-r from-white via-cyan-100 to-yellow-300 bg-clip-text text-transparent">
+            ด้วยเรื่องเงิน AI และอนาคต
+          </span>
+        </h1>
+
+        <p className="mt-6 max-w-2xl text-base leading-8 text-slate-300 md:text-lg">
+          พื้นที่สรุปข่าว แนวคิดการลงทุน เทคโนโลยี และเรื่องน่าคิดรอบโลก
+          ให้กลายเป็นบทความและพอดแคสต์สั้นๆ ที่เข้าใจง่าย
+        </p>
+
+        <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+          <a
+            href="#articles"
+            className="inline-flex items-center justify-center gap-2 rounded-2xl bg-yellow-300 px-6 py-3 text-sm font-black text-slate-950 shadow-lg shadow-yellow-500/25 transition hover:scale-[1.02] hover:bg-yellow-200"
+          >
+            <Zap size={18} /> เริ่มอ่านบทความ
+          </a>
+          <a
+            href="#podcast"
+            className="inline-flex items-center justify-center gap-2 rounded-2xl border border-yellow-300/30 bg-white/5 px-6 py-3 text-sm font-black text-yellow-100 backdrop-blur transition hover:bg-yellow-300/10"
+          >
+            <Headphones size={18} /> ฟังพอดแคสต์
+          </a>
+        </div>
+
+        <div className="mt-8 flex items-center gap-4">
+          <p className="text-sm font-bold text-slate-300">ติดตามเรา</p>
+          <div className="flex gap-3">
+            {socials.map((item) => {
+              const Icon = item.icon;
+              return (
+                <a key={item.name} href="#follow" className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/8 text-white transition hover:-translate-y-0.5 hover:bg-yellow-300 hover:text-slate-950">
+                  <Icon size={18} />
+                </a>
+              );
+            })}
           </div>
         </div>
-      </div>
-    </motion.div>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, scale: 0.94 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, delay: 0.1 }}
+        className="relative min-h-[420px]"
+      >
+        <div className="absolute inset-0 rounded-[2.5rem] bg-gradient-to-br from-cyan-400/20 via-blue-500/10 to-yellow-300/10 blur-2xl" />
+        <div className="relative h-full min-h-[420px] overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-br from-slate-950 via-blue-950 to-slate-950 shadow-2xl shadow-cyan-950/40">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_20%,rgba(56,189,248,0.32),transparent_26%),radial-gradient(circle_at_30%_80%,rgba(250,204,21,0.18),transparent_22%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.035)_1px,transparent_1px)] bg-[size:42px_42px] opacity-60" />
+
+          <div className="absolute right-8 top-8 rounded-2xl border border-cyan-300/20 bg-cyan-300/10 px-5 py-4 backdrop-blur">
+            <p className="text-3xl font-black text-cyan-200">AI</p>
+          </div>
+          <div className="absolute bottom-8 left-8 rounded-3xl border border-white/10 bg-black/30 p-5 backdrop-blur-xl">
+            <p className="text-xs font-bold text-yellow-200">LIVE INSIGHT</p>
+            <h2 className="mt-2 text-2xl font-black">ข่าวใหญ่วันนี้<br />เล่าให้เข้าใจง่าย</h2>
+            <p className="mt-3 max-w-xs text-sm leading-6 text-slate-300">
+              จากเรื่องซับซ้อนในตลาดโลก สู่คอนเทนต์สั้นที่เอาไปเล่าต่อได้ทันที
+            </p>
+          </div>
+
+          <div className="absolute bottom-28 right-10 h-28 w-44 rounded-2xl border border-cyan-300/20 bg-black/25 p-4 backdrop-blur">
+            <div className="mb-3 h-2 w-20 rounded-full bg-cyan-300/60" />
+            <div className="space-y-2">
+              <div className="h-2 rounded-full bg-white/20" />
+              <div className="h-2 w-2/3 rounded-full bg-white/15" />
+              <div className="h-2 w-4/5 rounded-full bg-yellow-300/30" />
+            </div>
+          </div>
+
+          <div className="absolute right-14 top-32 h-40 w-40 rounded-full border border-cyan-300/20 bg-cyan-400/10 blur-sm" />
+          <div className="absolute right-24 top-44 h-16 w-16 rounded-full border border-yellow-300/30" />
+          <div className="absolute right-36 top-60 h-3 w-3 rounded-full bg-yellow-300 shadow-[0_0_25px_rgba(250,204,21,0.7)]" />
+        </div>
+      </motion.div>
+    </div>
   </section>
 
-  <section className="mx-auto max-w-6xl px-5 py-10">
+  <section id="articles" className="mx-auto max-w-7xl px-5 py-10">
+    <div className="mb-6 flex items-end justify-between gap-5">
+      <div>
+        <p className="mb-2 flex items-center gap-2 text-sm font-black text-yellow-200"><Zap size={16} /> เรื่องเด่นวันนี้</p>
+        <h2 className="text-3xl font-black md:text-4xl">บทความล่าสุด</h2>
+      </div>
+      <a href="#" className="hidden rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-bold text-slate-200 hover:bg-white/10 md:inline-flex">ดูทั้งหมด</a>
+    </div>
+
+    <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+      {articles.map((item, index) => {
+        const Icon = item.icon;
+        return (
+          <motion.article
+            key={item.title}
+            initial={{ opacity: 0, y: 18 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: index * 0.08 }}
+            className="group overflow-hidden rounded-3xl border border-white/10 bg-white/[0.055] shadow-xl shadow-black/20 backdrop-blur transition hover:-translate-y-1 hover:border-yellow-300/25 hover:bg-white/[0.08]"
+          >
+            <div className={`relative h-44 bg-gradient-to-br ${item.gradient} p-5`}>
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,rgba(255,255,255,0.16),transparent_28%)]" />
+              <span className="relative rounded-full bg-black/30 px-3 py-1 text-xs font-bold text-cyan-100 backdrop-blur">{item.tag}</span>
+              <Icon className="absolute bottom-5 right-5 text-white/70" size={56} />
+            </div>
+            <div className="p-5">
+              <h3 className="text-lg font-black leading-snug">{item.title}</h3>
+              <p className="mt-3 text-sm leading-7 text-slate-300">{item.desc}</p>
+              <a href="#" className="mt-5 inline-flex items-center gap-2 rounded-full text-sm font-black text-yellow-300 no-underline group-hover:text-cyan-200">
+                อ่านต่อ <ArrowRight size={16} />
+              </a>
+            </div>
+          </motion.article>
+        );
+      })}
+    </div>
+  </section>
+
+  <section className="mx-auto max-w-7xl px-5 py-12">
     <div className="grid gap-4 md:grid-cols-3">
       {features.map((item, index) => {
         const Icon = item.icon;
@@ -121,7 +176,7 @@ export default function App() { return ( <main className="min-h-screen bg-[#0508
             transition={{ duration: 0.5, delay: index * 0.08 }}
             className="rounded-3xl border border-white/10 bg-white/[0.045] p-6 backdrop-blur"
           >
-            <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-cyan-300/10 text-cyan-200">
+            <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-yellow-300/10 text-yellow-300">
               <Icon size={22} />
             </div>
             <h3 className="text-xl font-black">{item.title}</h3>
@@ -132,61 +187,26 @@ export default function App() { return ( <main className="min-h-screen bg-[#0508
     </div>
   </section>
 
-  <section id="articles" className="mx-auto max-w-6xl px-5 py-16">
-    <div className="mb-8 flex items-end justify-between gap-5">
-      <div>
-        <p className="mb-2 text-sm font-bold text-cyan-200">Latest Contents</p>
-        <h2 className="text-3xl font-black md:text-4xl">คอนเทนต์ล่าสุด</h2>
-      </div>
-      <Newspaper className="hidden text-cyan-200 md:block" />
-    </div>
-
-    <div className="grid gap-5 md:grid-cols-3">
-      {articles.map((item, index) => (
-        <motion.article
-          key={item.title}
-          initial={{ opacity: 0, y: 18 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: index * 0.08 }}
-          className="group overflow-hidden rounded-3xl border border-white/10 bg-white/[0.055] backdrop-blur transition hover:-translate-y-1 hover:bg-white/[0.08]"
-        >
-          <div className={`h-44 bg-gradient-to-br ${item.gradient} p-5`}>
-            <span className="rounded-full bg-white/10 px-3 py-1 text-xs text-cyan-100 backdrop-blur">{item.tag}</span>
-            <div className="mt-16 h-1.5 w-20 rounded-full bg-cyan-200/60" />
-          </div>
-          <div className="p-5">
-            <h3 className="text-xl font-black leading-snug">{item.title}</h3>
-            <p className="mt-3 text-sm leading-7 text-slate-300">{item.desc}</p>
-            <button className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-cyan-200 group-hover:text-yellow-200">
-              อ่านต่อ <ArrowRight size={16} />
-            </button>
-          </div>
-        </motion.article>
-      ))}
-    </div>
-  </section>
-
-  <section id="podcast" className="mx-auto max-w-6xl px-5 py-16">
-    <div className="rounded-[2rem] border border-cyan-200/10 bg-gradient-to-br from-white/[0.08] to-cyan-400/[0.04] p-6 md:p-10">
+  <section id="podcast" className="mx-auto max-w-7xl px-5 py-12">
+    <div className="overflow-hidden rounded-[2rem] border border-yellow-300/15 bg-gradient-to-br from-yellow-300/12 via-white/[0.055] to-cyan-400/8 p-6 md:p-10">
       <div className="grid gap-8 md:grid-cols-[1.2fr_0.8fr] md:items-center">
         <div>
-          <p className="mb-3 text-sm font-bold text-yellow-200">Podcast / Shorts / Reels</p>
-          <h2 className="text-3xl font-black md:text-4xl">ฟังสรุปสั้นๆ ใน 1 นาที</h2>
+          <p className="mb-3 text-sm font-black text-yellow-200">Podcast / Shorts / Reels</p>
+          <h2 className="text-3xl font-black md:text-4xl">ฟังจบไว แต่ได้มุมคิดกลับไป</h2>
           <p className="mt-4 max-w-2xl text-base leading-8 text-slate-300">
-            คอนเทนต์สำหรับคนไม่มีเวลา แต่อยากเข้าใจประเด็นสำคัญของโลกธุรกิจ เทคโนโลยี และการลงทุน
+            พอดแคสต์สั้นสำหรับคนมีเวลาน้อย เล่าเรื่องเศรษฐกิจ เทคโนโลยี หุ้น และโลกอนาคตแบบจับประเด็นเร็ว
           </p>
         </div>
 
         <div className="grid gap-3">
-          <a className="flex items-center justify-between rounded-2xl bg-white/10 px-5 py-4 font-bold hover:bg-white/15" href="#follow">
+          <a className="flex items-center justify-between rounded-2xl bg-white/10 px-5 py-4 font-bold no-underline hover:bg-white/15" href="#follow">
             Facebook Reels <Facebook size={18} />
           </a>
-          <a className="flex items-center justify-between rounded-2xl bg-white/10 px-5 py-4 font-bold hover:bg-white/15" href="#follow">
+          <a className="flex items-center justify-between rounded-2xl bg-white/10 px-5 py-4 font-bold no-underline hover:bg-white/15" href="#follow">
             YouTube Shorts <Youtube size={18} />
           </a>
-          <a className="flex items-center justify-between rounded-2xl bg-cyan-300 px-5 py-4 font-black text-slate-950 hover:bg-cyan-200" href="#articles">
-            เริ่มฟังตอนล่าสุด <Headphones size={18} />
+          <a className="flex items-center justify-between rounded-2xl bg-yellow-300 px-5 py-4 font-black text-slate-950 no-underline hover:bg-yellow-200" href="#articles">
+            เริ่มฟังตอนล่าสุด <Mic2 size={18} />
           </a>
         </div>
       </div>
@@ -194,7 +214,7 @@ export default function App() { return ( <main className="min-h-screen bg-[#0508
   </section>
 
   <section id="about" className="mx-auto max-w-4xl px-5 py-16 text-center">
-    <p className="mb-3 text-sm font-bold text-cyan-200">About</p>
+    <p className="mb-3 text-sm font-black text-yellow-200">About</p>
     <h2 className="text-3xl font-black md:text-4xl">สมองหลังเลิกงาน คืออะไร?</h2>
     <p className="mt-5 text-base leading-8 text-slate-300 md:text-lg">
       พื้นที่ของคนทำงานที่อยากเข้าใจโลกเร็วขึ้น ผ่านบทความและพอดแคสต์สั้นๆ
@@ -202,16 +222,16 @@ export default function App() { return ( <main className="min-h-screen bg-[#0508
     </p>
   </section>
 
-  <section id="follow" className="mx-auto max-w-6xl px-5 pb-20 pt-8">
-    <div className="rounded-[2rem] border border-white/10 bg-gradient-to-r from-cyan-300/15 via-white/[0.06] to-yellow-300/10 p-8 text-center md:p-12">
-      <Mail className="mx-auto mb-5 text-cyan-200" size={30} />
+  <section id="follow" className="mx-auto max-w-7xl px-5 pb-20 pt-8">
+    <div className="rounded-[2rem] border border-white/10 bg-gradient-to-r from-yellow-300/15 via-white/[0.06] to-cyan-300/10 p-8 text-center md:p-12">
+      <Headphones className="mx-auto mb-5 text-yellow-300" size={32} />
       <h2 className="text-3xl font-black md:text-4xl">อยากตามโลกให้ทันหลังเลิกงาน?</h2>
       <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-slate-300 md:text-base">
         ติดตามบทความและพอดแคสต์ใหม่ๆ จากสมองหลังเลิกงาน แล้วเปลี่ยนข่าวยากให้กลายเป็นเรื่องที่เข้าใจง่ายทุกวัน
       </p>
       <div className="mt-7 flex flex-col justify-center gap-3 sm:flex-row">
-        <a href="#" className="rounded-2xl bg-cyan-300 px-6 py-3 text-sm font-black text-slate-950 hover:bg-cyan-200">ติดตาม Facebook</a>
-        <a href="#" className="rounded-2xl border border-white/15 bg-white/5 px-6 py-3 text-sm font-bold text-white hover:bg-white/10">ดู YouTube</a>
+        <a href="#" className="rounded-2xl bg-yellow-300 px-6 py-3 text-sm font-black text-slate-950 no-underline hover:bg-yellow-200">ติดตาม Facebook</a>
+        <a href="#" className="rounded-2xl border border-white/15 bg-white/5 px-6 py-3 text-sm font-bold text-white no-underline hover:bg-white/10">ดู YouTube</a>
       </div>
     </div>
   </section>
