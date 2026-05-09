@@ -135,8 +135,9 @@ return ( <main className="min-h-screen overflow-hidden bg-[#030712] text-white">
   <Icon
     className="absolute bottom-4 right-4 text-white/80"
     size={52}
-  />
-</div>      <span className="relative rounded-full bg-black/30 px-3 py-1 text-xs font-bold text-cyan-100 backdrop-blur">{item.tag}</span>
+  /></div>  
+ </motion.article>
+          <span className="relative rounded-full bg-black/30 px-3 py-1 text-xs font-bold text-cyan-100 backdrop-blur">{item.tag}</span>
               <Icon className="absolute bottom-5 right-5 text-white/70" size={56} />
             </div>
             <div className="p-5">
