@@ -137,6 +137,7 @@ return ( <main className="min-h-screen overflow-hidden bg-[#030712] text-white">
     size={52}
   /></div> 
           </div>
+          </motion.article>
             <div className="p-5">
               <h3 className="text-lg font-black leading-snug">{item.title}</h3>
               <p className="mt-3 text-sm leading-7 text-slate-300">{item.desc}</p>
