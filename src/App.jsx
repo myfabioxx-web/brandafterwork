@@ -1,5 +1,4 @@
-import React from "react"; import { motion } from "framer-motion"; import { ArrowRight, Headphones, Sparkles, Facebook, YoutubeIcon, Brain, TrendingUp, Radio, Globe2, Cpu, Coins, Zap, } from "lucide-react";
-
+import React from "react"; import { motion } from "framer-motion"; import { ArrowRight, Headphones, Sparkles, Brain, TrendingUp, Radio, Globe2, Cpu, Coins, Zap, PlayCircle } from "lucide-react";
 const articles = [ { title: "AI เปลี่ยนโลกการทำงานไปแล้ว", tag: "AI / เทคโนโลยี", desc: "เราอาจเริ่มตัวช้าไปโดยไม่รู้ตัว", icon: Cpu, gradient: "from-cyan-400/35 via-blue-900/30 to-slate-950", }, { title: "ทองคำยังน่าลงทุนอยู่ไหมตอนนี้?", tag: "การลงทุน", desc: "วิเคราะห์แนวโน้มราคาทองคำและปัจจัยสำคัญ", icon: Coins, gradient: "from-yellow-300/40 via-amber-700/25 to-slate-950", }, { title: "โลกในอีก 10 ปีข้างหน้า จะเป็นยังไง?", tag: "อนาคต", desc: "เทรนด์อนาคตที่น่าจับตามอง", icon: Brain, gradient: "from-indigo-400/35 via-cyan-900/30 to-slate-950", }, { title: "เศรษฐกิจโลกกำลังเปลี่ยนทิศ", tag: "เศรษฐกิจ", desc: "อะไรคือความเสี่ยง และโอกาสของคนไทย", icon: Globe2, gradient: "from-emerald-400/30 via-blue-900/25 to-slate-950", }, ];
 
 const features = [ { icon: Brain, title: "ย่อยเรื่องยาก", desc: "เปลี่ยนข่าวซับซ้อนให้กลายเป็นภาษาคนทำงาน อ่านง่าย ฟังง่าย" }, { icon: TrendingUp, title: "ทันกระแสโลก", desc: "จับประเด็น AI หุ้น เทคโนโลยี และเศรษฐกิจที่ควรรู้" }, { icon: Radio, title: "คอนเทนต์สั้น", desc: "บทความและพอดแคสต์ที่เข้าใจได้ในเวลาไม่กี่นาที" }, ];
@@ -55,8 +54,8 @@ export default function App() { return ( <main className="min-h-screen overflow-
 
       <div className="mt-8 flex items-center gap-4">
         <p className="text-sm font-bold text-slate-300">ติดตามเรา</p>
-        <a href="#follow" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white no-underline hover:bg-yellow-300 hover:text-slate-950"><YoutubeIcon size={18} /></a>
-        <a href="#follow" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white no-underline hover:bg-yellow-300 hover:text-slate-950"><Facebook size={18} /></a>
+        <a href="#follow" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white no-underline hover:bg-yellow-300 hover:text-slate-950"><PlayCircle size={18} /></a>
+        <a href="#follow" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white no-underline hover:bg-yellow-300 hover:text-slate-950"><Brain size={18} /></a>
         <a href="#follow" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white no-underline hover:bg-yellow-300 hover:text-slate-950"><Headphones size={18} /></a>
       </div>
     </motion.div>
