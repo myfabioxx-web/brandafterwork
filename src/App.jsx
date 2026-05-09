@@ -88,8 +88,8 @@ return ( <main className="min-h-screen overflow-hidden bg-[#030712] text-white">
 
       <div className="mt-8 flex items-center gap-4">
         <p className="text-sm font-bold text-slate-300">ติดตามเรา</p>
-        <a href="#follow" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white no-underline hover:bg-yellow-300 hover:text-slate-950"><Youtube size={18} /></a>
-        <a href="#follow" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white no-underline hover:bg-yellow-300 hover:text-slate-950"><Facebook size={18} /></a>
+        <a href="#follow" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white no-underline hover:bg-yellow-300 hover:text-slate-950"><span>▶</span>
+        <a href="#follow" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white no-underline hover:bg-yellow-300 hover:text-slate-950"><span>f</span>
         <a href="#follow" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white no-underline hover:bg-yellow-300 hover:text-slate-950"><Headphones size={18} /></a>
       </div>
     </motion.div>
