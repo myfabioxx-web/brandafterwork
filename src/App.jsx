@@ -119,8 +119,24 @@ return ( <main className="min-h-screen overflow-hidden bg-[#030712] text-white">
         const Icon = item.icon;
         return (
           <motion.article key={item.title} initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: index * 0.08 }} className="group overflow-hidden rounded-3xl border border-white/10 bg-white/[0.055] shadow-xl shadow-black/20 backdrop-blur hover:border-yellow-300/25">
-            <div className={`relative h-44 bg-gradient-to-br ${item.gradient} p-5`}>
-              <span className="relative rounded-full bg-black/30 px-3 py-1 text-xs font-bold text-cyan-100 backdrop-blur">{item.tag}</span>
+            <div className="relative h-44 overflow-hidden">
+  <img
+    src={`https://picsum.photos/600/400?random=${index + 1}`}
+    alt={item.title}
+    className="h-full w-full object-cover transition duration-500 group-hover:scale-110"
+  />
+
+  <div className={`absolute inset-0 bg-gradient-to-t ${item.gradient}`} />
+
+  <span className="absolute left-4 top-4 rounded-full bg-black/50 px-3 py-1 text-xs font-bold text-cyan-100 backdrop-blur">
+    {item.tag}
+  </span>
+
+  <Icon
+    className="absolute bottom-4 right-4 text-white/80"
+    size={52}
+  />
+</div>      <span className="relative rounded-full bg-black/30 px-3 py-1 text-xs font-bold text-cyan-100 backdrop-blur">{item.tag}</span>
               <Icon className="absolute bottom-5 right-5 text-white/70" size={56} />
             </div>
             <div className="p-5">
