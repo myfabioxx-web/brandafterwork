@@ -1,4 +1,4 @@
-import React from "react"; import { motion } from "framer-motion"; import { ArrowRight, Headphones, Sparkles, Facebook, Youtube, Brain, TrendingUp, Radio, Globe2, Cpu, Coins, Zap, } from "lucide-react";
+import React from "react"; import { motion } from "framer-motion"; import { ArrowRight, Headphones, Sparkles, Facebook, YoutubeIcon, Brain, TrendingUp, Radio, Globe2, Cpu, Coins, Zap, } from "lucide-react";
 
 const articles = [ { title: "AI เปลี่ยนโลกการทำงานไปแล้ว", tag: "AI / เทคโนโลยี", desc: "เราอาจเริ่มตัวช้าไปโดยไม่รู้ตัว", icon: Cpu, gradient: "from-cyan-400/35 via-blue-900/30 to-slate-950", }, { title: "ทองคำยังน่าลงทุนอยู่ไหมตอนนี้?", tag: "การลงทุน", desc: "วิเคราะห์แนวโน้มราคาทองคำและปัจจัยสำคัญ", icon: Coins, gradient: "from-yellow-300/40 via-amber-700/25 to-slate-950", }, { title: "โลกในอีก 10 ปีข้างหน้า จะเป็นยังไง?", tag: "อนาคต", desc: "เทรนด์อนาคตที่น่าจับตามอง", icon: Brain, gradient: "from-indigo-400/35 via-cyan-900/30 to-slate-950", }, { title: "เศรษฐกิจโลกกำลังเปลี่ยนทิศ", tag: "เศรษฐกิจ", desc: "อะไรคือความเสี่ยง และโอกาสของคนไทย", icon: Globe2, gradient: "from-emerald-400/30 via-blue-900/25 to-slate-950", }, ];
 
