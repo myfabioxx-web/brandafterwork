@@ -2,7 +2,7 @@ import React from 'react'
 import { createRoot } from 'react-dom/client'
 import { Brain, Mic, Newspaper, Sparkles, PlayCircle, ArrowRight } from 'lucide-react'
 import { motion } from 'framer-motion'
-import './style.css'
+import './index.css'
 
 function App() {
   const posts = [
