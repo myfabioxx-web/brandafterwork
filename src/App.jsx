@@ -36,20 +36,18 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#050607] text-white">
-      {/* NAVBAR */}
-      <nav className="sticky top-0 z-50 border-b border-white/10 bg-black/70 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-          <div className="flex items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-full border border-yellow-400/70 bg-yellow-400/10">
-              <Brain className="h-6 w-6 text-yellow-400" />
+      <nav className="sticky top-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur-xl">
+        <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-4 md:px-6">
+          <div className="flex min-w-0 items-center gap-3">
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-yellow-400/70 bg-yellow-400/10 md:h-11 md:w-11">
+              <Brain className="h-5 w-5 text-yellow-400 md:h-6 md:w-6" />
             </div>
 
-            <div>
-              <h1 className="text-lg font-black">
+            <div className="min-w-0">
+              <h1 className="text-base font-black leading-tight md:text-lg">
                 สมอง<span className="text-yellow-400">หลังเลิกงาน</span>
               </h1>
-
-              <p className="text-[10px] uppercase tracking-[0.25em] text-white/50">
+              <p className="mt-1 text-[9px] uppercase tracking-[0.2em] text-white/50 md:text-[10px]">
                 Content • Podcast • Ideas
               </p>
             </div>
@@ -62,15 +60,16 @@ export default function App() {
             <a className="text-white/70">เกี่ยวกับเรา</a>
           </div>
 
-          <div className="flex items-center gap-3">
-            <button className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5">
+          <div className="flex shrink-0 items-center gap-2 md:gap-3">
+            <button className="hidden h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 md:flex md:h-11 md:w-11">
               <Search className="h-5 w-5 text-white/70" />
             </button>
 
             <a
               href="https://www.youtube.com/@Brainafterwork"
               target="_blank"
-              className="rounded-xl bg-yellow-400 px-5 py-3 font-bold text-black"
+              rel="noreferrer"
+              className="rounded-xl bg-yellow-400 px-4 py-2 text-sm font-bold text-black md:px-5 md:py-3 md:text-base"
             >
               ติดตาม
             </a>
@@ -78,14 +77,13 @@ export default function App() {
         </div>
       </nav>
 
-      {/* HERO */}
-      <section className="mx-auto grid max-w-7xl gap-10 px-6 py-16 lg:grid-cols-2">
+      <section className="mx-auto grid max-w-7xl gap-8 px-4 py-10 md:px-6 md:py-16 lg:grid-cols-2">
         <div className="flex flex-col justify-center">
-          <p className="mb-5 text-xs font-bold uppercase tracking-[0.3em] text-yellow-400">
+          <p className="mb-4 text-[11px] font-bold uppercase tracking-[0.25em] text-yellow-400 md:text-xs md:tracking-[0.3em]">
             Content • Podcast • Ideas
           </p>
 
-          <h2 className="text-4xl font-black leading-tight md:text-6xl">
+          <h2 className="text-[2.35rem] font-black leading-[1.15] md:text-6xl md:leading-tight">
             เข้าใจโลกให้ทัน
             <br />
             ใช้เทคโนโลยีให้เป็น
@@ -95,16 +93,17 @@ export default function App() {
             </span>
           </h2>
 
-          <p className="mt-6 max-w-xl text-base leading-8 text-white/65 md:text-lg">
+          <p className="mt-5 max-w-xl text-base leading-8 text-white/65 md:mt-6 md:text-lg">
             คอนเทนต์สำหรับคนทำงาน ที่อยากเติบโต
             ในโลกที่เปลี่ยนเร็วที่สุด
           </p>
 
-          <div className="mt-8 flex flex-wrap gap-4">
+          <div className="mt-7 flex flex-col gap-3 sm:flex-row md:mt-8 md:flex-wrap md:gap-4">
             <a
               href="https://www.youtube.com/@Brainafterwork"
               target="_blank"
-              className="flex items-center gap-2 rounded-xl bg-yellow-400 px-6 py-4 font-bold text-black"
+              rel="noreferrer"
+              className="flex items-center justify-center gap-2 rounded-xl bg-yellow-400 px-6 py-4 font-bold text-black"
             >
               <PlayCircle className="h-5 w-5" />
               ฟัง Podcast
@@ -113,65 +112,46 @@ export default function App() {
             <a
               href="https://www.facebook.com/share/1A1yY6TTXP/"
               target="_blank"
-              className="flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-6 py-4 font-bold"
+              rel="noreferrer"
+              className="flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/5 px-6 py-4 font-bold"
             >
               <BookOpen className="h-5 w-5" />
               อ่านบทความ
             </a>
           </div>
 
-          <div className="mt-8 flex gap-3">
-            <a
-              href="https://www.youtube.com/@Brainafterwork"
-              target="_blank"
-              className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5"
-            >
+          <div className="mt-7 flex gap-3 md:mt-8">
+            <a href="https://www.youtube.com/@Brainafterwork" target="_blank" rel="noreferrer" className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5">
               <Video className="h-5 w-5 text-white/70" />
             </a>
-
-            <a
-              href="https://www.facebook.com/share/1A1yY6TTXP/"
-              target="_blank"
-              className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5"
-            >
+            <a href="https://www.facebook.com/share/1A1yY6TTXP/" target="_blank" rel="noreferrer" className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5">
               <CircleUserRound className="h-5 w-5 text-white/70" />
             </a>
-
-            <a
-              href="https://tiktok.com/@brainafterw0rk"
-              target="_blank"
-              className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5"
-            >
+            <a href="https://tiktok.com/@brainafterw0rk" target="_blank" rel="noreferrer" className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5">
               <Music2 className="h-5 w-5 text-white/70" />
             </a>
-
-            <a
-              href="mailto:brain.afterwork@gmail.com"
-              className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5"
-            >
+            <a href="mailto:brain.afterwork@gmail.com" className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5">
               <Headphones className="h-5 w-5 text-white/70" />
             </a>
           </div>
         </div>
 
-        {/* HERO IMAGE */}
-        <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5">
+        <div className="overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/5 md:rounded-[2rem]">
           <img
             src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1600&auto=format&fit=crop"
-            className="h-full min-h-[360px] w-full object-cover opacity-80"
+            className="h-full min-h-[280px] w-full object-cover opacity-80 md:min-h-[360px]"
             alt="Podcast studio"
           />
         </div>
       </section>
 
-      {/* CONTENT */}
-      <section className="mx-auto max-w-7xl px-6 pb-16">
-        <div className="mb-8 flex items-center justify-between">
-          <h3 className="text-3xl font-black md:text-4xl">
+      <section className="mx-auto max-w-7xl px-4 pb-14 md:px-6 md:pb-16">
+        <div className="mb-6 flex items-center justify-between md:mb-8">
+          <h3 className="text-2xl font-black md:text-4xl">
             คอนเทนต์<span className="text-yellow-400">ล่าสุด</span>
           </h3>
 
-          <button className="rounded-xl border border-white/10 px-5 py-3 text-sm font-bold text-white/60">
+          <button className="rounded-xl border border-white/10 px-4 py-2 text-sm font-bold text-white/60 md:px-5 md:py-3">
             ดูทั้งหมด
           </button>
         </div>
@@ -182,20 +162,11 @@ export default function App() {
               key={i}
               className="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04]"
             >
-              <img
-                src={item.image}
-                className="h-52 w-full object-cover"
-                alt={item.title}
-              />
-
+              <img src={item.image} className="h-48 w-full object-cover md:h-52" alt={item.title} />
               <div className="p-5">
-                <h4 className="text-lg font-black leading-7">
-                  {item.title}
-                </h4>
-
+                <h4 className="text-lg font-black leading-7">{item.title}</h4>
                 <div className="mt-5 flex items-center justify-between text-sm text-white/50">
                   <span>Podcast • 32:15</span>
-
                   <button className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10">
                     <PlayCircle className="h-5 w-5" />
                   </button>
@@ -206,20 +177,17 @@ export default function App() {
         </div>
       </section>
 
-      {/* ABOUT */}
-      <section className="mx-auto max-w-7xl px-6 pb-20">
-        <div className="grid overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] lg:grid-cols-2">
-          <div className="p-10">
+      <section className="mx-auto max-w-7xl px-4 pb-16 md:px-6 md:pb-20">
+        <div className="grid overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/[0.03] md:rounded-[2rem] lg:grid-cols-2">
+          <div className="p-6 md:p-10">
             <p className="mb-3 text-sm font-bold uppercase tracking-[0.3em] text-yellow-400">
               About
             </p>
 
-            <h3 className="text-4xl font-black leading-tight">
+            <h3 className="text-3xl font-black leading-tight md:text-4xl">
               เกี่ยวกับ
               <br />
-              <span className="text-yellow-400">
-                สมองหลังเลิกงาน
-              </span>
+              <span className="text-yellow-400">สมองหลังเลิกงาน</span>
             </h3>
 
             <p className="mt-6 leading-8 text-white/65">
@@ -231,6 +199,7 @@ export default function App() {
             <a
               href="https://www.facebook.com/share/1A1yY6TTXP/"
               target="_blank"
+              rel="noreferrer"
               className="mt-8 inline-block rounded-xl bg-yellow-400 px-6 py-4 font-bold text-black"
             >
               รู้จักเรามากขึ้น
@@ -240,27 +209,23 @@ export default function App() {
           <div className="overflow-hidden">
             <img
               src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=1600&auto=format&fit=crop"
-              className="h-full min-h-[320px] w-full object-cover opacity-80"
+              className="h-full min-h-[260px] w-full object-cover opacity-80 md:min-h-[320px]"
               alt="Workspace"
             />
           </div>
         </div>
       </section>
 
-      {/* FOOTER */}
       <footer className="border-t border-white/10 bg-black/40">
-        <div className="mx-auto grid max-w-7xl gap-10 px-6 py-12 md:grid-cols-4">
+        <div className="mx-auto grid max-w-7xl gap-10 px-4 py-10 md:grid-cols-4 md:px-6 md:py-12">
           <div>
             <div className="flex items-center gap-3">
               <div className="flex h-11 w-11 items-center justify-center rounded-full border border-yellow-400/70 bg-yellow-400/10">
                 <Brain className="h-6 w-6 text-yellow-400" />
               </div>
-
-              <div>
-                <h1 className="text-lg font-black">
-                  สมอง<span className="text-yellow-400">หลังเลิกงาน</span>
-                </h1>
-              </div>
+              <h1 className="text-lg font-black">
+                สมอง<span className="text-yellow-400">หลังเลิกงาน</span>
+              </h1>
             </div>
 
             <p className="mt-5 text-sm leading-7 text-white/55">
@@ -271,7 +236,6 @@ export default function App() {
 
           <div>
             <h4 className="mb-4 font-black">เมนู</h4>
-
             <div className="grid gap-3 text-sm text-white/55">
               <a>หน้าแรก</a>
               <a>Podcast</a>
@@ -282,29 +246,14 @@ export default function App() {
 
           <div>
             <h4 className="mb-4 font-black">ติดตาม</h4>
-
             <div className="flex gap-3">
-              <a
-                href="https://www.youtube.com/@Brainafterwork"
-                target="_blank"
-                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5"
-              >
+              <a href="https://www.youtube.com/@Brainafterwork" target="_blank" rel="noreferrer" className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5">
                 <Video className="h-5 w-5 text-white/70" />
               </a>
-
-              <a
-                href="https://www.facebook.com/share/1A1yY6TTXP/"
-                target="_blank"
-                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5"
-              >
+              <a href="https://www.facebook.com/share/1A1yY6TTXP/" target="_blank" rel="noreferrer" className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5">
                 <CircleUserRound className="h-5 w-5 text-white/70" />
               </a>
-
-              <a
-                href="https://tiktok.com/@brainafterw0rk"
-                target="_blank"
-                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5"
-              >
+              <a href="https://tiktok.com/@brainafterw0rk" target="_blank" rel="noreferrer" className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5">
                 <Music2 className="h-5 w-5 text-white/70" />
               </a>
             </div>
@@ -312,7 +261,6 @@ export default function App() {
 
           <div>
             <h4 className="mb-4 font-black">ติดต่อ</h4>
-
             <div className="flex items-center gap-3 text-sm text-white/55">
               <Mail className="h-5 w-5 text-yellow-400" />
               brain.afterwork@gmail.com
@@ -320,7 +268,7 @@ export default function App() {
           </div>
         </div>
 
-        <div className="border-t border-white/10 py-5 text-center text-sm text-white/40">
+        <div className="border-t border-white/10 px-4 py-5 text-center text-sm text-white/40">
           © 2026 สมองหลังเลิกงาน. All rights reserved.
         </div>
       </footer>
