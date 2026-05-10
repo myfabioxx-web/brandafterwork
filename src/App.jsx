@@ -25,7 +25,7 @@ export default function App() {
     {
       title: "เทคนิคโฟกัส ทำงานเยอะแต่เหนื่อยน้อยลง",
       image:
-        "/src/hero.png",
+        "/hero.png",
     },
     {
       title: "เริ่มต้นลงทุน สำหรับคนเงินเดือนประจำ",
