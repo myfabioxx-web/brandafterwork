@@ -12,6 +12,7 @@ import {
   Coins,
   Zap,
   PlayCircle,
+  Rocket,
 } from "lucide-react";
 
 const articles = [
