@@ -138,7 +138,7 @@ export default function App() {
 
         <div className="overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/5 md:rounded-[2rem]">
           <img
-            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1600&auto=format&fit=crop"
+            src="hero.png"
             className="h-full min-h-[280px] w-full object-cover opacity-80 md:min-h-[360px]"
             alt="Podcast studio"
           />
