@@ -1,4 +1,4 @@
-import {
+import heroImage from "./hero.png";
   Brain,
   PlayCircle,
   BookOpen,
@@ -138,7 +138,7 @@ export default function App() {
 
         <div className="overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/5 md:rounded-[2rem]">
           <img
-            src="hero.png"
+            src={heroImage}
             className="h-full min-h-[280px] w-full object-cover opacity-80 md:min-h-[360px]"
             alt="Podcast studio"
           />
