@@ -14,8 +14,6 @@ import {
   PlayCircle,
   Menu,
   X,
-  Youtube,
-  Facebook,
   Mic2,
   Newspaper,
   Rocket,
