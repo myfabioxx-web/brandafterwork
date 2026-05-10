@@ -67,9 +67,13 @@ export default function App() {
               <Search className="h-5 w-5 text-white/70" />
             </button>
 
-            <button className="rounded-xl bg-yellow-400 px-5 py-3 font-bold text-black">
+            <a
+              href="https://www.youtube.com/@Brainafterwork"
+              target="_blank"
+              className="rounded-xl bg-yellow-400 px-5 py-3 font-bold text-black"
+            >
               ติดตาม
-            </button>
+            </a>
           </div>
         </div>
       </nav>
@@ -97,26 +101,56 @@ export default function App() {
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
-            <button className="flex items-center gap-2 rounded-xl bg-yellow-400 px-6 py-4 font-bold text-black">
+            <a
+              href="https://www.youtube.com/@Brainafterwork"
+              target="_blank"
+              className="flex items-center gap-2 rounded-xl bg-yellow-400 px-6 py-4 font-bold text-black"
+            >
               <PlayCircle className="h-5 w-5" />
               ฟัง Podcast
-            </button>
+            </a>
 
-            <button className="flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-6 py-4 font-bold">
+            <a
+              href="https://www.facebook.com/share/1A1yY6TTXP/"
+              target="_blank"
+              className="flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-6 py-4 font-bold"
+            >
               <BookOpen className="h-5 w-5" />
               อ่านบทความ
-            </button>
+            </a>
           </div>
 
           <div className="mt-8 flex gap-3">
-            {[Video, CircleUserRound, Music2, Headphones].map((Icon, i) => (
-              <button
-                key={i}
-                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5"
-              >
-                <Icon className="h-5 w-5 text-white/70" />
-              </button>
-            ))}
+            <a
+              href="https://www.youtube.com/@Brainafterwork"
+              target="_blank"
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5"
+            >
+              <Video className="h-5 w-5 text-white/70" />
+            </a>
+
+            <a
+              href="https://www.facebook.com/share/1A1yY6TTXP/"
+              target="_blank"
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5"
+            >
+              <CircleUserRound className="h-5 w-5 text-white/70" />
+            </a>
+
+            <a
+              href="https://tiktok.com/@brainafterw0rk"
+              target="_blank"
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5"
+            >
+              <Music2 className="h-5 w-5 text-white/70" />
+            </a>
+
+            <a
+              href="mailto:brain.afterwork@gmail.com"
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5"
+            >
+              <Headphones className="h-5 w-5 text-white/70" />
+            </a>
           </div>
         </div>
 
@@ -194,9 +228,13 @@ export default function App() {
               แต่เป็นสิ่งที่ทุกคนเริ่มได้ หลังเลิกงาน
             </p>
 
-            <button className="mt-8 rounded-xl bg-yellow-400 px-6 py-4 font-bold text-black">
+            <a
+              href="https://www.facebook.com/share/1A1yY6TTXP/"
+              target="_blank"
+              className="mt-8 inline-block rounded-xl bg-yellow-400 px-6 py-4 font-bold text-black"
+            >
               รู้จักเรามากขึ้น
-            </button>
+            </a>
           </div>
 
           <div className="overflow-hidden">
@@ -246,16 +284,29 @@ export default function App() {
             <h4 className="mb-4 font-black">ติดตาม</h4>
 
             <div className="flex gap-3">
-              {[Video, CircleUserRound, Music2, Headphones].map(
-                (Icon, i) => (
-                  <button
-                    key={i}
-                    className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5"
-                  >
-                    <Icon className="h-5 w-5 text-white/70" />
-                  </button>
-                )
-              )}
+              <a
+                href="https://www.youtube.com/@Brainafterwork"
+                target="_blank"
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5"
+              >
+                <Video className="h-5 w-5 text-white/70" />
+              </a>
+
+              <a
+                href="https://www.facebook.com/share/1A1yY6TTXP/"
+                target="_blank"
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5"
+              >
+                <CircleUserRound className="h-5 w-5 text-white/70" />
+              </a>
+
+              <a
+                href="https://tiktok.com/@brainafterw0rk"
+                target="_blank"
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5"
+              >
+                <Music2 className="h-5 w-5 text-white/70" />
+              </a>
             </div>
           </div>
 
@@ -264,7 +315,7 @@ export default function App() {
 
             <div className="flex items-center gap-3 text-sm text-white/55">
               <Mail className="h-5 w-5 text-yellow-400" />
-              brainafterwork@gmail.com
+              brain.afterwork@gmail.com
             </div>
           </div>
         </div>
