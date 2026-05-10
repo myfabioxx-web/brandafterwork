@@ -7,6 +7,7 @@ import {
   Search,
   Video,
   CircleUserRound,
+  Mail,
 } from "lucide-react";
 
 export default function App() {
@@ -35,6 +36,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#050607] text-white">
+      {/* NAVBAR */}
       <nav className="sticky top-0 z-50 border-b border-white/10 bg-black/70 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           <div className="flex items-center gap-3">
@@ -46,6 +48,7 @@ export default function App() {
               <h1 className="text-lg font-black">
                 สมอง<span className="text-yellow-400">หลังเลิกงาน</span>
               </h1>
+
               <p className="text-[10px] uppercase tracking-[0.25em] text-white/50">
                 Content • Podcast • Ideas
               </p>
@@ -71,13 +74,14 @@ export default function App() {
         </div>
       </nav>
 
+      {/* HERO */}
       <section className="mx-auto grid max-w-7xl gap-10 px-6 py-16 lg:grid-cols-2">
         <div className="flex flex-col justify-center">
           <p className="mb-5 text-xs font-bold uppercase tracking-[0.3em] text-yellow-400">
             Content • Podcast • Ideas
           </p>
 
-          <h2 className="text-5xl font-black leading-tight">
+          <h2 className="text-4xl font-black leading-tight md:text-6xl">
             เข้าใจโลกให้ทัน
             <br />
             ใช้เทคโนโลยีให้เป็น
@@ -87,7 +91,7 @@ export default function App() {
             </span>
           </h2>
 
-          <p className="mt-6 max-w-xl text-lg leading-8 text-white/65">
+          <p className="mt-6 max-w-xl text-base leading-8 text-white/65 md:text-lg">
             คอนเทนต์สำหรับคนทำงาน ที่อยากเติบโต
             ในโลกที่เปลี่ยนเร็วที่สุด
           </p>
@@ -116,6 +120,7 @@ export default function App() {
           </div>
         </div>
 
+        {/* HERO IMAGE */}
         <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5">
           <img
             src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1600&auto=format&fit=crop"
@@ -125,9 +130,10 @@ export default function App() {
         </div>
       </section>
 
+      {/* CONTENT */}
       <section className="mx-auto max-w-7xl px-6 pb-16">
         <div className="mb-8 flex items-center justify-between">
-          <h3 className="text-4xl font-black">
+          <h3 className="text-3xl font-black md:text-4xl">
             คอนเทนต์<span className="text-yellow-400">ล่าสุด</span>
           </h3>
 
@@ -142,10 +148,16 @@ export default function App() {
               key={i}
               className="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04]"
             >
-              <img src={item.image} className="h-52 w-full object-cover" alt={item.title} />
+              <img
+                src={item.image}
+                className="h-52 w-full object-cover"
+                alt={item.title}
+              />
 
               <div className="p-5">
-                <h4 className="text-lg font-black leading-7">{item.title}</h4>
+                <h4 className="text-lg font-black leading-7">
+                  {item.title}
+                </h4>
 
                 <div className="mt-5 flex items-center justify-between text-sm text-white/50">
                   <span>Podcast • 32:15</span>
@@ -160,6 +172,7 @@ export default function App() {
         </div>
       </section>
 
+      {/* ABOUT */}
       <section className="mx-auto max-w-7xl px-6 pb-20">
         <div className="grid overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] lg:grid-cols-2">
           <div className="p-10">
@@ -170,7 +183,9 @@ export default function App() {
             <h3 className="text-4xl font-black leading-tight">
               เกี่ยวกับ
               <br />
-              <span className="text-yellow-400">สมองหลังเลิกงาน</span>
+              <span className="text-yellow-400">
+                สมองหลังเลิกงาน
+              </span>
             </h3>
 
             <p className="mt-6 leading-8 text-white/65">
@@ -193,6 +208,46 @@ export default function App() {
           </div>
         </div>
       </section>
-    </div>
-  );
-}
+
+      {/* FOOTER */}
+      <footer className="border-t border-white/10 bg-black/40">
+        <div className="mx-auto grid max-w-7xl gap-10 px-6 py-12 md:grid-cols-4">
+          <div>
+            <div className="flex items-center gap-3">
+              <div className="flex h-11 w-11 items-center justify-center rounded-full border border-yellow-400/70 bg-yellow-400/10">
+                <Brain className="h-6 w-6 text-yellow-400" />
+              </div>
+
+              <div>
+                <h1 className="text-lg font-black">
+                  สมอง<span className="text-yellow-400">หลังเลิกงาน</span>
+                </h1>
+              </div>
+            </div>
+
+            <p className="mt-5 text-sm leading-7 text-white/55">
+              เข้าใจโลกให้ทัน ใช้เทคโนโลยีให้เป็น
+              และพัฒนาตัวเองให้ไม่หยุดนิ่ง
+            </p>
+          </div>
+
+          <div>
+            <h4 className="mb-4 font-black">เมนู</h4>
+
+            <div className="grid gap-3 text-sm text-white/55">
+              <a>หน้าแรก</a>
+              <a>Podcast</a>
+              <a>บทความ</a>
+              <a>เกี่ยวกับเรา</a>
+            </div>
+          </div>
+
+          <div>
+            <h4 className="mb-4 font-black">ติดตาม</h4>
+
+            <div className="flex gap-3">
+              {[Video, CircleUserRound, Music2, Headphones].map(
+                (Icon, i) => (
+                  <button
+                    key={i}
+                    className="flex h-11 w-11 items-center justify
