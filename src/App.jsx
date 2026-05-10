@@ -138,7 +138,7 @@ export default function App() {
           </div>
         </div>
 
-        <div className="overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/5 md:rounded-[2rem]">
+        <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-black md:rounded-[2rem]">
           <img
             src={heroImage}
             className="w-full h-full object-contain md:object-cover"
