@@ -250,4 +250,29 @@ export default function App() {
                 (Icon, i) => (
                   <button
                     key={i}
-                    className="flex h-11 w-11 items-center justify
+                    className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5"
+                  >
+                    <Icon className="h-5 w-5 text-white/70" />
+                  </button>
+                )
+              )}
+            </div>
+          </div>
+
+          <div>
+            <h4 className="mb-4 font-black">ติดต่อ</h4>
+
+            <div className="flex items-center gap-3 text-sm text-white/55">
+              <Mail className="h-5 w-5 text-yellow-400" />
+              brainafterwork@gmail.com
+            </div>
+          </div>
+        </div>
+
+        <div className="border-t border-white/10 py-5 text-center text-sm text-white/40">
+          © 2026 สมองหลังเลิกงาน. All rights reserved.
+        </div>
+      </footer>
+    </div>
+  );
+}
