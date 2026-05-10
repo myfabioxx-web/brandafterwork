@@ -1,4 +1,4 @@
-import heroImage from "./hero.png";
+import {
   Brain,
   PlayCircle,
   BookOpen,
@@ -9,6 +9,8 @@ import heroImage from "./hero.png";
   CircleUserRound,
   Mail,
 } from "lucide-react";
+
+import heroImage from "./hero.png";
 
 export default function App() {
   const contentItems = [
