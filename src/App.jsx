@@ -330,10 +330,10 @@ export default function App() {
           </p>
           <div className="mt-7 flex flex-wrap justify-center gap-3">
             <a href="#" className="inline-flex items-center gap-2 rounded-2xl bg-white/10 px-5 py-3 text-sm font-black text-white no-underline hover:bg-yellow-300 hover:text-slate-950">
-              <Youtube size={18} /> YouTube
+              <span>▶</span> YouTube
             </a>
             <a href="#" className="inline-flex items-center gap-2 rounded-2xl bg-white/10 px-5 py-3 text-sm font-black text-white no-underline hover:bg-yellow-300 hover:text-slate-950">
-              <Facebook size={18} /> Facebook
+              <span>f</span> Facebook
             </a>
             <a href="#" className="inline-flex items-center gap-2 rounded-2xl bg-white/10 px-5 py-3 text-sm font-black text-white no-underline hover:bg-yellow-300 hover:text-slate-950">
               <Headphones size={18} /> Podcast
