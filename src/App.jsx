@@ -141,7 +141,7 @@ export default function App() {
         <div className="overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/5 md:rounded-[2rem]">
           <img
             src={heroImage}
-            className="h-full min-h-[280px] w-full object-cover opacity-80 md:min-h-[360px]"
+            className="w-full h-full object-contain md:object-cover"
             alt="Podcast studio"
           />
         </div>
