@@ -166,3 +166,22 @@ button:hover {
 .animate-smoothAppear {
   animation: smoothAppear 1.2s ease;
 }
+@keyframes textGlow {
+  0% {
+    text-shadow: 0 0 0px rgba(250, 204, 21, 0);
+  }
+
+  50% {
+    text-shadow:
+      0 0 18px rgba(250, 204, 21, 0.35),
+      0 0 40px rgba(250, 204, 21, 0.12);
+  }
+
+  100% {
+    text-shadow: 0 0 0px rgba(250, 204, 21, 0);
+  }
+}
+
+.animate-textGlow {
+  animation: textGlow 4s ease-in-out infinite;
+}
