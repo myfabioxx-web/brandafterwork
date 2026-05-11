@@ -121,3 +121,32 @@ html {
     transform: translateY(0);
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #050607;
+}
+
+::selection {
+  background: rgba(250, 204, 21, 0.35);
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050607;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(250, 204, 21, 0.35);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(250, 204, 21, 0.6);
+}
