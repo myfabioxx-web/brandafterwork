@@ -151,7 +151,7 @@ export default function App() {
           <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-yellow-400/10 z-10" />
           <img
             src={heroImage}
-              className="w-full h-full object-contain md:object-cover hover:scale-[1.03] transition duration-700"
+              className="w-full h-full object-cover scale-[1.02] hover:scale-[1.05] transition duration-700 brightness-105 contrast-105"
             alt="Podcast studio"
           />
         </div>
