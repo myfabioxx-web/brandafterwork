@@ -172,7 +172,7 @@ export default function App() {
           </div>
         </div>
 
-        <div className="group relative overflow-hidden rounded-[2.5rem] border border-white/10 bg-black shadow-[0_0_100px_rgba(250,204,21,0.12)] transition duration-700 hover:shadow-[0_0_120px_rgba(250,204,21,0.18)] md:rounded-[2.5rem]">
+        <div className="group relative overflow-hidden rounded-[2.5rem] animate-borderGlow border border-white/10 bg-black shadow-[0_0_100px_rgba(250,204,21,0.12)] transition duration-700 hover:shadow-[0_0_120px_rgba(250,204,21,0.18)] md:rounded-[2.5rem]">
           <div className="absolute inset-0 z-10 bg-[radial-gradient(circle_at_top,rgba(250,204,21,0.12),transparent_45%)]" />
           <div className="absolute inset-0 z-10 shadow-[inset_0_0_120px_rgba(0,0,0,0.75)]" />
           <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/60 via-transparent to-yellow-400/10" />
