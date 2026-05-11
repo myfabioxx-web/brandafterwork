@@ -99,7 +99,7 @@ export default function App() {
             <br />
             ใช้เทคโนโลยีให้เป็น
             <br />
-            <span className="text-yellow-400">
+            <span className="text-yellow-400 drop-shadow-[0_0_18px_rgba(250,204,21,0.45)]">
               และพัฒนาตัวเองให้ไม่หยุดนิ่ง
             </span>
           </h2>
