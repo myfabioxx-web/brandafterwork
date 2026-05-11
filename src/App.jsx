@@ -183,7 +183,7 @@ export default function App() {
     >
       <img
         src={item.image}
-        className="h-48 w-full object-cover transition duration-700 group-hover:scale-110 md:h-52"
+        className="h-48 w-full object-cover transition-all duration-1000 ease-out group-hover:scale-125 group-hover:brightness-75 md:h-52"
         alt={item.title}  
       />
 
