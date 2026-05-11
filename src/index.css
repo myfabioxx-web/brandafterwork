@@ -134,7 +134,7 @@ button:hover {
 }
 
 .animate-grain {
-  animation: grainMove 8s steps(10) infinite;
+  animation: grainMove 18s steps(10) infinite;
 }
 @keyframes imageFade {
   from {
@@ -148,9 +148,6 @@ button:hover {
   }
 }
 
-.animate-imageFade {
-  animation: imageFade 1.4s ease;
-}
 @keyframes smoothAppear {
   from {
     opacity: 0;
@@ -183,7 +180,7 @@ button:hover {
 }
 
 .animate-textGlow {
-  animation: textGlow 4s ease-in-out infinite;
+  animation: textGlow 7s ease-in-out infinite;
 }
 @keyframes borderGlow {
   0% {
