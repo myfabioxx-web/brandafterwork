@@ -59,9 +59,12 @@ export default function App() {
 
           <div className="hidden gap-8 text-sm font-semibold md:flex">
             <a className="text-yellow-400">หน้าแรก</a>
-            <a className="text-white/70 hover:text-yellow-400 transition duration-300 cursor-pointer">
-              Podcast
-            </a>
+            <a
+               href="#podcast"
+               className="text-white/70 hover:text-yellow-400 transition duration-300 cursor-pointer"
+             >
+                Podcast
+             </a>
             <a className="text-white/70 hover:text-yellow-400 transition duration-300 cursor-pointer">
              บทความ
              </a>
