@@ -61,7 +61,7 @@ export default function App() {
             <a className="text-yellow-400">หน้าแรก</a>
             <a
                href="#podcast"
-               className="text-white/70 hover:text-yellow-400 transition duration-300 cursor-pointer"
+               className="text-white/70 hover:text-yellow-400 hover:drop-shadow-[0_0_12px_rgba(250,204,21,0.5)] transition duration-300 cursor-pointer"
              >
                 Podcast
              </a>
@@ -255,9 +255,9 @@ export default function App() {
     </a>
   </div>
 
-  <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-black/40 shadow-[0_0_60px_rgba(250,204,21,0.08)]">
+  <div className="group overflow-hidden rounded-[2rem] border border-white/10 bg-black/40 shadow-[0_0_60px_rgba(250,204,21,0.08)] transition duration-500 hover:border-yellow-400/30 hover:shadow-[0_0_90px_rgba(250,204,21,0.18)]">
     <iframe
-      className="aspect-video w-full"
+      className="aspect-video w-full transition duration-700 group-hover:scale-[1.01]"
       src="https://www.youtube.com/embed/1FmoEr3w-90"
       title="YouTube video player"
       allowFullScreen
