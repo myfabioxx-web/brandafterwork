@@ -135,16 +135,16 @@ export default function App() {
           </div>
 
           <div className="mt-7 flex gap-3 md:mt-8">
-            <a href="https://www.youtube.com/@Brainafterwork" target="_blank" rel="noreferrer" className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5">
+            <a href="https://www.youtube.com/@Brainafterwork" target="_blank" rel="noreferrer" className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 transition duration-300 hover:scale-110 hover:border-yellow-400/40 hover:bg-yellow-400/10 hover:shadow-[0_0_25px_rgba(250,204,21,0.25)]">
               <Video className="h-5 w-5 text-white/70" />
             </a>
-            <a href="https://www.facebook.com/share/1A1yY6TTXP/" target="_blank" rel="noreferrer" className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5">
+            <a href="https://www.facebook.com/share/1A1yY6TTXP/" target="_blank" rel="noreferrer" className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 transition duration-300 hover:scale-110 hover:border-yellow-400/40 hover:bg-yellow-400/10 hover:shadow-[0_0_25px_rgba(250,204,21,0.25)]">
               <CircleUserRound className="h-5 w-5 text-white/70" />
             </a>
-            <a href="https://tiktok.com/@brainafterw0rk" target="_blank" rel="noreferrer" className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5">
+            <a href="https://tiktok.com/@brainafterw0rk" target="_blank" rel="noreferrer" className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 transition duration-300 hover:scale-110 hover:border-yellow-400/40 hover:bg-yellow-400/10 hover:shadow-[0_0_25px_rgba(250,204,21,0.25)]">
               <Music2 className="h-5 w-5 text-white/70" />
             </a>
-            <a href="mailto:brain.afterwork@gmail.com" className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5">
+            <a href="mailto:brain.afterwork@gmail.com" className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 transition duration-300 hover:scale-110 hover:border-yellow-400/40 hover:bg-yellow-400/10 hover:shadow-[0_0_25px_rgba(250,204,21,0.25)]">
               <Headphones className="h-5 w-5 text-white/70" />
             </a>
           </div>
