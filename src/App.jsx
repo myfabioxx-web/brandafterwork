@@ -138,9 +138,10 @@ export default function App() {
               href="https://www.youtube.com/@Brainafterwork"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-yellow-300 to-yellow-500 px-6 py-4 font-bold text-black transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(250,204,21,0.45)] hover:brightness-110"
+              className="group relative overflow-hidden flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-yellow-300 to-yellow-500 px-6 py-4 font-bold text-black transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(250,204,21,0.45)] hover:brightness-110"
             >
               <PlayCircle className="h-5 w-5" />
+              <div className="absolute inset-0 -translate-x-full bg-[linear-gradient(120deg,transparent,rgba(255,255,255,0.45),transparent)] transition duration-1000 group-hover:translate-x-full" />
               ฟัง Podcast
             </a>
 
