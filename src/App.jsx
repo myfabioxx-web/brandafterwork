@@ -180,6 +180,7 @@ export default function App() {
                 alt={item.title} 
               />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-90" />
+              <div className="absolute -bottom-10 left-1/2 h-32 w-32 -translate-x-1/2 rounded-full bg-yellow-400/20 blur-3xl opacity-0 transition duration-500 group-hover:opacity-100" />
               <div className="absolute bottom-0 left-0 z-20 p-5">
                 <h4 className="text-lg font-black leading-7">{item.title}</h4>
                 <div className="mt-5 flex items-center justify-between text-sm text-white/50">
