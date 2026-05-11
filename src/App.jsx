@@ -222,7 +222,7 @@ export default function App() {
               <span className="text-yellow-400">สมองหลังเลิกงาน</span>
             </h3>
 
-            <p className="mt-6 leading-8 text-white/65">
+            <p className="mt-6 leading-9 tracking-[0.01em] text-white/60">
               เราเชื่อว่า “การพัฒนาตัวเอง”
               ไม่ใช่เรื่องของใครคนใดคนหนึ่ง
               แต่เป็นสิ่งที่ทุกคนเริ่มได้ หลังเลิกงาน
