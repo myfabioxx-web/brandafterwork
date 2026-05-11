@@ -233,7 +233,31 @@ export default function App() {
           </div>
         </div>
       </section>
+       <section className="mx-auto max-w-7xl px-4 py-16 md:px-6">
+          <div className="mb-8 flex items-center justify-between">
+          <h3 className="text-3xl font-black md:text-5xl">
+           Podcast<span className="text-yellow-400"> ล่าสุด</span>
+           </h3>
 
+    <a
+      href="https://www.youtube.com/@Brainafterwork"
+      target="_blank"
+      rel="noreferrer"
+      className="rounded-xl border border-white/10 px-5 py-3 text-sm font-bold text-white/60 hover:border-yellow-400/30 hover:text-yellow-400"
+    >
+      ดูทั้งหมด
+    </a>
+  </div>
+
+  <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-black/40 shadow-[0_0_60px_rgba(250,204,21,0.08)]">
+    <iframe
+      className="aspect-video w-full"
+      src="https://www.youtube.com/embed/jfKfPfyJRdk"
+      title="YouTube video player"
+      allowFullScreen
+    />
+  </div>
+</section>
       <footer className="border-t border-white/10 bg-black/40">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 py-10 md:grid-cols-4 md:px-6 md:py-12">
           <div>
