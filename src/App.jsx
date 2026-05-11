@@ -173,7 +173,7 @@ export default function App() {
             <div
               key={i}
               className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.04] transition duration-500 hover:-translate-y-3 hover:border-yellow-400/40 hover:shadow-[0_0_50px_rgba(250,204,21,0.12)]">
-            >
+          
               <img 
                 src={item.image} 
                 className="h-48 w-full object-cover transition duration-700 group-hover:scale-110 md:h-52" 
