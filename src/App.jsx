@@ -79,7 +79,7 @@ export default function App() {
               href="https://www.youtube.com/@Brainafterwork"
               target="_blank"
               rel="noreferrer"
-              className="rounded-xl bg-gradient-to-r from-yellow-300 to-yellow-500 px-4 py-2 text-sm font-black text-black transition duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(250,204,21,0.45)] hover:brightness-110 md:px-5 md:py-3 md:text-base"
+              className="rounded-2xl bg-gradient-to-r from-yellow-300 via-yellow-400 to-yellow-500 px-5 py-3 text-sm font-black text-black transition-all duration-300 hover:scale-105 hover:shadow-[0_0_45px_rgba(250,204,21,0.55)] hover:brightness-110 md:px-6 md:text-base"
             >
               ติดตาม
             </a>
