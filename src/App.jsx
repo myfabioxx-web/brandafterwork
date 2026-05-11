@@ -272,7 +272,7 @@ export default function App() {
     />
   </div>
 </section>
-      <footer className="border-t border-white/10 bg-black/40">
+      <footer className="border-t border-yellow-400/10 bg-black/50 backdrop-blur-xl shadow-[0_-10px_60px_rgba(250,204,21,0.05)]">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 py-10 md:grid-cols-4 md:px-6 md:py-12">
           <div>
             <div className="flex items-center gap-3">
@@ -291,7 +291,7 @@ export default function App() {
           </div>
 
           <div>
-            <h4 className="mb-4 font-black">เมนู</h4>
+            <h4 className="mb-4 text-lg font-black text-yellow-300">เมนู</h4>
             <div className="grid gap-3 text-sm text-white/55">
               <a>หน้าแรก</a>
               <a>Podcast</a>
