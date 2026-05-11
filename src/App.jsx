@@ -118,6 +118,7 @@ export default function App() {
       </nav>
 
       <section className="fade-section relative overflow-hidden mx-auto grid max-w-7xl gap-8 px-4 py-10 md:px-6 md:py-16 lg:grid-cols-2">
+       <div className="absolute left-[-10%] top-[10%] h-[500px] w-[500px] rounded-full bg-yellow-400/10 blur-[180px]" />
         <div className="absolute top-0 left-1/2 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-yellow-400/10 blur-[180px] animate-floatGlow" />  
         <div className="flex flex-col justify-center">
           <p className="mb-4 text-[11px] font-bold uppercase tracking-[0.25em] text-yellow-400 md:text-xs md:tracking-[0.3em]">
@@ -223,6 +224,9 @@ export default function App() {
       <div className="absolute -bottom-10 left-1/2 h-32 w-32 -translate-x-1/2 rounded-full bg-yellow-400/20 blur-3xl opacity-0 transition duration-500 group-hover:opacity-100" />
 
       <div className="absolute bottom-0 left-0 z-20 p-5">
+        <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-yellow-400/20 bg-yellow-400/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.18em] text-yellow-300 backdrop-blur-xl">
+      Trending Podcast
+      </div>
         <h4 className="text-lg font-black leading-7 transition-all duration-300 group-hover:text-yellow-300 group-hover:drop-shadow-[0_0_18px_rgba(250,204,21,0.55)]">
           {item.title}
         </h4>
