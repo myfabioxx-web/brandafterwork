@@ -199,7 +199,7 @@ export default function App() {
       <div className="absolute -bottom-10 left-1/2 h-32 w-32 -translate-x-1/2 rounded-full bg-yellow-400/20 blur-3xl opacity-0 transition duration-500 group-hover:opacity-100" />
 
       <div className="absolute bottom-0 left-0 z-20 p-5">
-        <h4 className="text-lg font-black leading-7 transition duration-300 group-hover:text-yellow-300 group-hover:drop-shadow-[0_0_12px_rgba(250,204,21,0.45)]">
+        <h4 className="text-lg font-black leading-7 transition-all duration-300 group-hover:text-yellow-300 group-hover:drop-shadow-[0_0_18px_rgba(250,204,21,0.55)]">
           {item.title}
         </h4>
 
