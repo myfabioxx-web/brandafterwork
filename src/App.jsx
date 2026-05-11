@@ -163,7 +163,7 @@ export default function App() {
 
       <section
           id="podcast"
-          className="mx-auto max-w-7xl px-4 py-16 md:px-6"
+          className="fade-section mx-auto max-w-7xl px-4 pt-10 pb-14 md:px-6 md:pb-16"
 >
         <div className="mb-6 flex items-center justify-between md:mb-8">
           <h3 className="text-2xl font-black tracking-tight md:text-5xl">
