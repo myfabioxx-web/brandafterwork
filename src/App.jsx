@@ -40,7 +40,7 @@ export default function App() {
     <>
     <div className="pointer-events-none fixed inset-0 z-30 bg-[radial-gradient(circle_at_center,rgba(250,204,21,0.05),transparent_35%)]" />
     <div className="min-h-screen bg-[#050607] text-white">
-        <nav className="sticky top-0 z-50 border-b border-yellow-500/10 bg-black/70 backdrop-blur-2xl shadow-[0_0_40px_rgba(250,204,21,0.05)]">
+        <nav className="sticky top-0 z-50 border-b border-yellow-500/10 bg-black/50 backdrop-blur-3xl shadow-[0_10px_50px_rgba(0,0,0,0.45)]">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-4 md:px-6">
           <div className="flex min-w-0 items-center gap-3">
             <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-yellow-400/70 bg-yellow-400/10 md:h-11 md:w-11">
