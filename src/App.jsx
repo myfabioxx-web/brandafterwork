@@ -77,7 +77,7 @@ export default function App() {
               href="https://www.youtube.com/@Brainafterwork"
               target="_blank"
               rel="noreferrer"
-              className="rounded-xl bg-yellow-400 px-4 py-2 text-sm font-bold text-black md:px-5 md:py-3 md:text-base"
+              className="rounded-xl bg-yellow-400 px-4 py-2 text-sm font-bold text-black transition duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(250,204,21,0.35)] md:px-5 md:py-3 md:text-base"
             >
               ติดตาม
             </a>
