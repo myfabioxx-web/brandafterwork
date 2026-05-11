@@ -107,7 +107,7 @@ export default function App() {
             </span>
           </h2>
 
-          <p className="mt-5 max-w-xl text-base leading-8 text-white/65 md:mt-6 md:text-lg">
+          <p className="mt-6 max-w-2xl text-base leading-9 tracking-[0.01em] text-white/60 md:text-xl">
             คอนเทนต์สำหรับคนทำงาน ที่อยากเติบโต
             ในโลกที่เปลี่ยนเร็วที่สุด
           </p>
