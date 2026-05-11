@@ -111,3 +111,28 @@ button:hover {
 .animate-floatingHero {
   animation: floatingHero 8s ease-in-out infinite;
 }
+@keyframes grainMove {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(-2%, 2%);
+  }
+
+  50% {
+    transform: translate(-1%, -1%);
+  }
+
+  75% {
+    transform: translate(2%, -2%);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.animate-grain {
+  animation: grainMove 8s steps(10) infinite;
+}
