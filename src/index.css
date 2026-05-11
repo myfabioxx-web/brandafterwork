@@ -1,6 +1,3 @@
-html {
-  scroll-behavior: smooth;
-}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -45,90 +42,6 @@ button:hover {
   transform: translateY(-2px);
 }
 
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgba(255, 196, 0, 0.3);
-  border-radius: 999px;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-@keyframes floatGlow {
-  0% {
-    transform: translate(-50%, 0px);
-  }
-
-  50% {
-    transform: translate(-50%, 30px);
-  }
-
-  100% {
-    transform: translate(-50%, 0px);
-  }
-}
-
-.animate-floatGlow {
-  animation: floatGlow 8s ease-in-out infinite;
-}
-@keyframes floatGlow {
-  0% {
-    transform: translate(-50%, 0px);
-  }
-
-  50% {
-    transform: translate(-50%, 20px);
-  }
-
-  100% {
-    transform: translate(-50%, 0px);
-  }
-}
-
-.animate-floatGlow {
-  animation: floatGlow 7s ease-in-out infinite;
-}
-.fade-section {
-  animation: fadeUp 1s ease;
-}
-
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(35px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-html {
-  scroll-behavior: smooth;
-}
-.fade-section {
-  opacity: 0;
-  transform: translateY(40px);
-  animation: fadeUp 1s ease forwards;
-}
-
-@keyframes fadeUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background: #050607;
-}
-
 ::selection {
   background: rgba(250, 204, 21, 0.35);
   color: white;
@@ -149,4 +62,35 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(250, 204, 21, 0.6);
+}
+
+@keyframes floatGlow {
+  0% {
+    transform: translate(-50%, 0px);
+  }
+
+  50% {
+    transform: translate(-50%, 20px);
+  }
+
+  100% {
+    transform: translate(-50%, 0px);
+  }
+}
+
+.animate-floatGlow {
+  animation: floatGlow 7s ease-in-out infinite;
+}
+
+.fade-section {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
