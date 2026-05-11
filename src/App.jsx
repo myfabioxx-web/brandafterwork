@@ -181,7 +181,7 @@ export default function App() {
   {contentItems.map((item, i) => (
     <div
       key={i}
-      className="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] backdrop-blur-2xl transition-all duration-700 ease-out hover:-translate-y-5 hover:scale-[1.02] hover:border-yellow-400/40 hover:bg-white/[0.05] hover:shadow-[0_0_80px_rgba(250,204,21,0.22)]"
+      className="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04] backdrop-blur-3xl transition-all duration-700 ease-out hover:-translate-y-5 hover:scale-[1.02] hover:border-yellow-400/40 hover:bg-white/[0.05] hover:shadow-[0_0_80px_rgba(250,204,21,0.22)]"
     >
       <img
         src={item.image}
@@ -190,6 +190,7 @@ export default function App() {
       />
 
       <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-90" />
+      <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(255,255,255,0.08),transparent_40%)] opacity-0 transition duration-700 group-hover:opacity-100" />
 
       <div className="absolute -bottom-10 left-1/2 h-32 w-32 -translate-x-1/2 rounded-full bg-yellow-400/20 blur-3xl opacity-0 transition duration-500 group-hover:opacity-100" />
 
