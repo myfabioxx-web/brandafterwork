@@ -171,9 +171,9 @@ export default function App() {
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
           {contentItems.map((item, i) => (
             <div
-              key={i}
-              className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.04] transition duration-500 hover:-translate-y-3 hover:border-yellow-400/40 hover:shadow-[0_0_50px_rgba(250,204,21,0.12)]">
-          
+               key={i}
+               className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.04] backdrop-blur-xl transition duration-500 hover:-translate-y-3 hover:border-yellow-400/40 hover:bg-white/[0.06] hover:shadow-[0_0_60px_rgba(250,204,21,0.18)]"
+               >
               <img 
                 src={item.image} 
                 className="h-48 w-full object-cover transition duration-700 group-hover:scale-110 md:h-52" 
