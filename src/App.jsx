@@ -151,7 +151,8 @@ export default function App() {
         </div>
 
         <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-black shadow-[0_0_80px_rgba(250,204,21,0.08)] md:rounded-[2rem]">
-          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-yellow-400/10 z-10" />
+          <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/60 via-transparent to-yellow-400/10" />
+          <div className="absolute inset-0 z-10 bg-[radial-gradient(circle_at_top,rgba(250,204,21,0.12),transparent_45%)]" />
           <img
             src={heroImage}
               className="w-full h-full object-cover scale-[1.02] hover:scale-[1.06] hover:rotate-[0.3deg] transition-all duration-1000 ease-out brightness-105 contrast-105"
