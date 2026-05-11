@@ -58,7 +58,7 @@ export default function App() {
     <div className="pointer-events-none fixed inset-0 z-30 bg-[radial-gradient(circle_at_top,rgba(250,204,21,0.08),transparent_28%),radial-gradient(circle_at_bottom,rgba(255,180,0,0.04),transparent_30%)]" />
       <div className="pointer-events-none fixed inset-0 bg-[radial-gradient(circle_at_center,rgba(250,204,21,0.05),transparent_40%)]" />
     <div className="pointer-events-none fixed inset-0 opacity-[0.03] animate-grain mix-blend-soft-light bg-[url('https://www.transparenttextures.com/patterns/asfalt-dark.png')]" />
-      <div className="relative min-h-screen overflow-hidden before:absolute before:inset-0 before:pointer-events-none before:bg-[radial-gradient(circle_at_var(--x)_var(--y),rgba(250,204,21,0.12),transparent_220px)] bg-[radial-gradient(circle_at_top,rgba(250,204,21,0.08),#050607_38%),linear-gradient(to_bottom,#050607,#07090c)] text-white">
+      <div className="relative min-h-screen animate-smoothAppear overflow-hidden before:absolute before:inset-0 before:pointer-events-none before:bg-[radial-gradient(circle_at_var(--x)_var(--y),rgba(250,204,21,0.12),transparent_220px)] bg-[radial-gradient(circle_at_top,rgba(250,204,21,0.08),#050607_38%),linear-gradient(to_bottom,#050607,#07090c)] text-white">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(250,204,21,0.06),transparent_35%)] blur-3xl" />
         <nav className="sticky top-0 z-50 border-b border-yellow-400/10 bg-black/20 backdrop-blur-[30px] shadow-[0_10px_100px_rgba(250,204,21,0.08)] supports-[backdrop-filter]:bg-black/20">
           <div className="absolute inset-0 bg-[linear-gradient(to_right,transparent,rgba(250,204,21,0.06),transparent)]" />
