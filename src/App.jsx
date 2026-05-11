@@ -91,7 +91,7 @@ export default function App() {
       </nav>
 
       <section className="relative overflow-hidden mx-auto grid max-w-7xl gap-8 px-4 py-10 md:px-6 md:py-16 lg:grid-cols-2">
-        <div className="absolute top-0 left-1/2 h-[420px] w-[420px] -translate-x-1/2 rounded-full bg-yellow-400/5 blur-[140px] animate-floatGlow" />  
+        <div className="absolute top-0 left-1/2 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-yellow-400/10 blur-[180px] animate-floatGlow" />  
         <div className="flex flex-col justify-center">
           <p className="mb-4 text-[11px] font-bold uppercase tracking-[0.25em] text-yellow-400 md:text-xs md:tracking-[0.3em]">
             Content • Podcast • Ideas
