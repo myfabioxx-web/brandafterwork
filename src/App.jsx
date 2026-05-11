@@ -157,7 +157,10 @@ export default function App() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-4 pt-10 pb-14 md:px-6 md:pb-16">
+      <section
+          id="podcast"
+          className="mx-auto max-w-7xl px-4 py-16 md:px-6"
+>
         <div className="mb-6 flex items-center justify-between md:mb-8">
           <h3 className="text-2xl font-black tracking-tight md:text-5xl">
             คอนเทนต์<span className="text-yellow-400">ล่าสุด</span>
