@@ -172,9 +172,14 @@ export default function App() {
           {contentItems.map((item, i) => (
             <div
               key={i}
-              className="group overflow-hidden rounded-3xl border border-white/10 bg-white/[0.04] transition duration-500 hover:-translate-y-2 hover:border-yellow-400/30 hover:shadow-[0_0_40px_rgba(250,204,21,0.08)]"
+              className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.04] transition duration-500 hover:-translate-y-2 hover:border-yellow-400/30 hover:shadow-[0_0_40px_rgba(250,204,21,0.08)]"
             >
-              <img src={item.image} className="h-48 w-full object-cover transition duration-700 group-hover:scale-110 md:h-52" alt={item.title} />
+              <img 
+                src={item.image} 
+                className="h-48 w-full object-cover transition duration-700 group-hover:scale-110 md:h-52" 
+                alt={item.title} 
+              />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-80" />
               <div className="p-5">
                 <h4 className="text-lg font-black leading-7">{item.title}</h4>
                 <div className="mt-5 flex items-center justify-between text-sm text-white/50">
