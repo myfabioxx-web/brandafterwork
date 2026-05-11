@@ -91,3 +91,18 @@ button:hover {
 .animate-floatGlow {
   animation: floatGlow 7s ease-in-out infinite;
 }
+.fade-section {
+  animation: fadeUp 1s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
