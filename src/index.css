@@ -185,3 +185,22 @@ button:hover {
 .animate-textGlow {
   animation: textGlow 4s ease-in-out infinite;
 }
+@keyframes borderGlow {
+  0% {
+    box-shadow: 0 0 0px rgba(250, 204, 21, 0);
+  }
+
+  50% {
+    box-shadow:
+      0 0 25px rgba(250, 204, 21, 0.18),
+      0 0 80px rgba(250, 204, 21, 0.08);
+  }
+
+  100% {
+    box-shadow: 0 0 0px rgba(250, 204, 21, 0);
+  }
+}
+
+.animate-borderGlow {
+  animation: borderGlow 5s ease-in-out infinite;
+}
