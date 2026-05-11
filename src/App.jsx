@@ -97,7 +97,7 @@ export default function App() {
             Content • Podcast • Ideas
           </p>
 
-          <h2 className="text-[2.35rem] font-black leading-[1.15] md:text-6xl md:leading-tight">
+          <h2 className="text-[2.35rem] font-black leading-[1.05] tracking-[-0.03em] md:text-7xl md:leading-[0.95]">
             เข้าใจโลกให้ทัน
             <br />
             ใช้เทคโนโลยีให้เป็น
