@@ -38,7 +38,7 @@ export default function App() {
 
   return (
     <>
-    <div className="pointer-events-none fixed inset-0 z-30 bg-[radial-gradient(circle_at_center,rgba(250,204,21,0.05),transparent_35%)]" />
+    <div className="pointer-events-none fixed inset-0 z-30 bg-[radial-gradient(circle_at_top,rgba(250,204,21,0.08),transparent_28%),radial-gradient(circle_at_bottom,rgba(255,180,0,0.04),transparent_30%)]" />
     <div className="min-h-screen bg-[radial-gradient(circle_at_top,rgba(250,204,21,0.06),#050607_45%)] text-white">
         <nav className="sticky top-0 z-50 border-b border-yellow-400/10 bg-black/40 backdrop-blur-[24px] shadow-[0_8px_60px_rgba(0,0,0,0.75)]">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-4 md:px-6">
