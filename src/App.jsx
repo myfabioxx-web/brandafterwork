@@ -38,7 +38,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#050607] text-white">
-      <nav className="sticky top-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur-xl">
+        <nav className="sticky top-0 z-50 border-b border-yellow-500/10 bg-black/70 backdrop-blur-2xl shadow-[0_0_40px_rgba(250,204,21,0.05)]">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-4 md:px-6">
           <div className="flex min-w-0 items-center gap-3">
             <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-yellow-400/70 bg-yellow-400/10 md:h-11 md:w-11">
@@ -57,9 +57,15 @@ export default function App() {
 
           <div className="hidden gap-8 text-sm font-semibold md:flex">
             <a className="text-yellow-400">หน้าแรก</a>
-            <a className="text-white/70">Podcast</a>
-            <a className="text-white/70">บทความ</a>
-            <a className="text-white/70">เกี่ยวกับเรา</a>
+            <a className="text-white/70 hover:text-yellow-400 transition duration-300 cursor-pointer">
+              Podcast
+            </a>
+            <a className="text-white/70 hover:text-yellow-400 transition duration-300 cursor-pointer">
+             บทความ
+             </a>
+            <a className="text-white/70 hover:text-yellow-400 transition duration-300 cursor-pointer">
+             เกี่ยวกับเรา
+            </a>
           </div>
 
           <div className="flex shrink-0 items-center gap-2 md:gap-3">
