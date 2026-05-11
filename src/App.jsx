@@ -129,7 +129,7 @@ export default function App() {
             <br />
             ใช้เทคโนโลยีให้เป็น
             <br />
-            <span className="text-yellow-300 drop-shadow-[0_0_30px_rgba(250,204,21,0.85)]">
+            <span className="animate-gradientText bg-gradient-to-r from-yellow-200 via-yellow-400 to-yellow-200 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(250,204,21,0.85)]">
               และพัฒนาตัวเองให้ไม่หยุดนิ่ง
             </span>
           </h2>
