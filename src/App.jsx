@@ -303,6 +303,7 @@ export default function App() {
     />
   </div>
 </section>
+        <div className="pointer-events-none h-32 bg-gradient-to-b from-transparent to-black/70 blur-2xl" />
       <footer className="border-t border-yellow-400/10 bg-black/50 backdrop-blur-xl shadow-[0_-10px_60px_rgba(250,204,21,0.05)]">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 py-10 md:grid-cols-4 md:px-6 md:py-12">
           <div>
