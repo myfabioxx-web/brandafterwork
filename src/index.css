@@ -151,3 +151,20 @@ button:hover {
 .animate-imageFade {
   animation: imageFade 1.4s ease;
 }
+@keyframes floatingHero {
+  0% {
+    transform: translateY(0px) scale(1.04);
+  }
+
+  50% {
+    transform: translateY(-12px) scale(1.05);
+  }
+
+  100% {
+    transform: translateY(0px) scale(1.04);
+  }
+}
+
+.animate-floatingHero {
+  animation: floatingHero 8s ease-in-out infinite;
+}
