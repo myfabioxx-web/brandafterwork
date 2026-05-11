@@ -190,7 +190,7 @@ export default function App() {
           />
         </div>
       </section>
-
+       <div className="mx-auto h-px max-w-6xl bg-gradient-to-r from-transparent via-yellow-400/20 to-transparent" />
       <section
           id="podcast"
           className="fade-section mx-auto max-w-7xl px-4 pt-10 pb-14 md:px-6 md:pb-16"
