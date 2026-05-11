@@ -146,6 +146,7 @@ export default function App() {
         </div>
 
         <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-black shadow-[0_0_80px_rgba(250,204,21,0.08)] md:rounded-[2rem]">
+          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-yellow-400/10 z-10" />
           <img
             src={heroImage}
               className="w-full h-full object-contain md:object-cover hover:scale-[1.03] transition duration-700"
