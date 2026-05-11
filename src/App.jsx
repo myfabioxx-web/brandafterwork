@@ -43,7 +43,8 @@ export default function App() {
     <div className="pointer-events-none fixed inset-0 opacity-[0.03] mix-blend-soft-light bg-[url('https://www.transparenttextures.com/patterns/asfalt-dark.png')]" />
       <div className="relative min-h-screen overflow-hidden bg-[radial-gradient(circle_at_top,rgba(250,204,21,0.08),#050607_38%),linear-gradient(to_bottom,#050607,#07090c)] text-white">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(250,204,21,0.06),transparent_35%)] blur-3xl" />
-        <nav className="sticky top-0 z-50 border-b border-yellow-400/10 bg-black/30 backdrop-blur-[30px] shadow-[0_10px_80px_rgba(0,0,0,0.85)] supports-[backdrop-filter]:bg-black/20">
+        <nav className="sticky top-0 z-50 border-b border-yellow-400/10 bg-black/20 backdrop-blur-[30px] shadow-[0_10px_100px_rgba(250,204,21,0.08)] supports-[backdrop-filter]:bg-black/20">
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,transparent,rgba(250,204,21,0.06),transparent)]" />
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-4 md:px-6">
           <div className="flex min-w-0 items-center gap-3">
             <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-yellow-400/70 bg-yellow-400/10 md:h-11 md:w-11">
