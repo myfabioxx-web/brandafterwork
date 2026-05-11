@@ -49,7 +49,7 @@ export default function App() {
           <div className="flex min-w-0 items-center gap-3">
             <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-yellow-400/70 bg-yellow-400/10 md:h-11 md:w-11">
               <Brain className="h-5 w-5 text-yellow-400 md:h-6 md:w-6" />
-            </div
+            </div>
 
             <div className="min-w-0">
               <h1 className="text-base font-black leading-tight md:text-lg">
