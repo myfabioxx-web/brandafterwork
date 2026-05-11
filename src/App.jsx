@@ -39,6 +39,7 @@ export default function App() {
   return (
     <>
     <div className="pointer-events-none fixed inset-0 z-30 bg-[radial-gradient(circle_at_top,rgba(250,204,21,0.08),transparent_28%),radial-gradient(circle_at_bottom,rgba(255,180,0,0.04),transparent_30%)]" />
+      <div className="pointer-events-none fixed inset-0 bg-[radial-gradient(circle_at_center,rgba(250,204,21,0.05),transparent_40%)]" />
     <div className="pointer-events-none fixed inset-0 opacity-[0.03] mix-blend-soft-light bg-[url('https://www.transparenttextures.com/patterns/asfalt-dark.png')]" />
       <div className="relative min-h-screen overflow-hidden bg-[radial-gradient(circle_at_top,rgba(250,204,21,0.08),#050607_38%),linear-gradient(to_bottom,#050607,#07090c)] text-white">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(250,204,21,0.06),transparent_35%)] blur-3xl" />
@@ -47,7 +48,7 @@ export default function App() {
           <div className="flex min-w-0 items-center gap-3">
             <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-yellow-400/70 bg-yellow-400/10 md:h-11 md:w-11">
               <Brain className="h-5 w-5 text-yellow-400 md:h-6 md:w-6" />
-            </div>
+            </div
 
             <div className="min-w-0">
               <h1 className="text-base font-black leading-tight md:text-lg">
