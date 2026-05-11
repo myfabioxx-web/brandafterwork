@@ -54,3 +54,20 @@ button:hover {
 ::-webkit-scrollbar-track {
   background: transparent;
 }
+@keyframes floatGlow {
+  0% {
+    transform: translate(-50%, 0px);
+  }
+
+  50% {
+    transform: translate(-50%, 30px);
+  }
+
+  100% {
+    transform: translate(-50%, 0px);
+  }
+}
+
+.animate-floatGlow {
+  animation: floatGlow 8s ease-in-out infinite;
+}
