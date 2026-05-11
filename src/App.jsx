@@ -169,7 +169,7 @@ export default function App() {
           {contentItems.map((item, i) => (
             <div
               key={i}
-              className="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04]"
+              className="group overflow-hidden rounded-3xl border border-white/10 bg-white/[0.04] transition duration-500 hover:-translate-y-2 hover:border-yellow-400/30 hover:shadow-[0_0_40px_rgba(250,204,21,0.08)]"
             >
               <img src={item.image} className="h-48 w-full object-cover md:h-52" alt={item.title} />
               <div className="p-5">
