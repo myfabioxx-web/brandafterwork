@@ -79,7 +79,8 @@ export default function App() {
         </div>
       </nav>
 
-      <section className="mx-auto grid max-w-7xl gap-8 px-4 py-10 md:px-6 md:py-16 lg:grid-cols-2">
+      <section className="relative overflow-hidden mx-auto grid max-w-7xl gap-8 px-4 py-10 md:px-6 md:py-16 lg:grid-cols-2">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,#facc1520,transparent_40%)]" />  
         <div className="flex flex-col justify-center">
           <p className="mb-4 text-[11px] font-bold uppercase tracking-[0.25em] text-yellow-400 md:text-xs md:tracking-[0.3em]">
             Content • Podcast • Ideas
