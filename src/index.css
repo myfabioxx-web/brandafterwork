@@ -74,3 +74,20 @@ button:hover {
 .animate-floatGlow {
   animation: floatGlow 8s ease-in-out infinite;
 }
+@keyframes floatGlow {
+  0% {
+    transform: translate(-50%, 0px);
+  }
+
+  50% {
+    transform: translate(-50%, 20px);
+  }
+
+  100% {
+    transform: translate(-50%, 0px);
+  }
+}
+
+.animate-floatGlow {
+  animation: floatGlow 7s ease-in-out infinite;
+}
