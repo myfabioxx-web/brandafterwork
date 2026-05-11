@@ -252,7 +252,7 @@ export default function App() {
   <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-black/40 shadow-[0_0_60px_rgba(250,204,21,0.08)]">
     <iframe
       className="aspect-video w-full"
-      src="https://www.youtube.com/embed/abc123XYZ"
+      src="https://www.youtube.com/embed/1FmoEr3w-90"
       title="YouTube video player"
       allowFullScreen
     />
