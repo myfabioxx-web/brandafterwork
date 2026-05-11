@@ -38,6 +38,7 @@ export default function App() {
 
   return (
     <>
+    <div className="pointer-events-none fixed inset-0 z-30 bg-[radial-gradient(circle_at_center,rgba(250,204,21,0.05),transparent_35%)]" />
     <div className="min-h-screen bg-[#050607] text-white">
         <nav className="sticky top-0 z-50 border-b border-yellow-500/10 bg-black/70 backdrop-blur-2xl shadow-[0_0_40px_rgba(250,204,21,0.05)]">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-4 md:px-6">
