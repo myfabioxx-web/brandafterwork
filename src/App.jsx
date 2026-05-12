@@ -16,6 +16,10 @@ import heroImage from "./hero.png";
 export default function App() {
   const [loading, setLoading] = useState(true);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [cursor, setCursor] = useState({
+  x: 0,
+  y: 0,
+});
   useEffect(() => {
   const moveGlow = (e) => {
     document.documentElement.style.setProperty(
