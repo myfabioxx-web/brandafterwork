@@ -281,7 +281,7 @@ export default function App() {
   {contentItems.map((item, i) => (
     <div
       key={i}
-      className="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04] backdrop-blur-3xl transition-all duration-700 ease-out hover:-translate-y-5 hover:scale-[1.02] hover:border-yellow-400/40 hover:bg-white/[0.05] hover:shadow-[0_0_80px_rgba(250,204,21,0.22)] before:absolute before:inset-0 before:bg-[radial-gradient(circle_at_top,rgba(250,204,21,0.14),transparent_55%)] before:opacity-0 before:transition before:duration-700 hover:before:opacity-100"
+      className="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04] backdrop-blur-3xl transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] hover:-translate-y-6 hover:scale-[1.03] hover:border-yellow-400/40 hover:bg-white/[0.05] hover:shadow-[0_0_80px_rgba(250,204,21,0.22)] before:absolute before:inset-0 before:bg-[radial-gradient(circle_at_top,rgba(250,204,21,0.14),transparent_55%)] before:opacity-0 before:transition before:duration-700 hover:before:opacity-100"
     >
       <img
         src={item.image}
