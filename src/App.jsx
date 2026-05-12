@@ -41,7 +41,25 @@ useEffect(() => {
 
   return () => clearTimeout(timer);
 }, []);
+useEffect(() => {
+  const moveGlow = (e) => {
+    document.documentElement.style.setProperty(
+      "--x",
+      `${e.clientX}px`
+    );
 
+    document.documentElement.style.setProperty(
+      "--y",
+      `${e.clientY}px`
+    );
+  };
+
+  window.addEventListener("mousemove", moveGlow);
+
+  return () => {
+    window.removeEventListener("mousemove", moveGlow);
+  };
+}, []);
 if (loading) {
   return (
     <div className="flex min-h-screen items-center justify-center bg-[#050607] text-white">
