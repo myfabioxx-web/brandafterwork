@@ -292,3 +292,7 @@ button:hover {
 .animate-smoothAppear {
   animation: smoothAppear 1.4s ease;
 }
+:root {
+  --x: 50%;
+  --y: 50%;
+}
