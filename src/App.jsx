@@ -342,7 +342,7 @@ export default function App() {
                 <MonitorPlay className="h-5 w-5 text-white/70" />
               </a>
               <a href="https://www.facebook.com/share/1A1yY6TTXP/" target="_blank" rel="noreferrer" className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5">
-                <BagdeInfo className="h-5 w-5 text-white/70" />
+                <BadgeInfo className="h-5 w-5 text-white/70" />
               </a>
               <a href="https://tiktok.com/@brainafterw0rk" target="_blank" rel="noreferrer" className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5">
                 <Music2 className="h-5 w-5 text-white/70" />
