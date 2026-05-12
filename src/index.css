@@ -413,3 +413,32 @@ html {
 
   mix-blend-mode: screen;
 }
+.reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  transition:
+    opacity 1s ease,
+    transform 1s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.cursor-glow {
+  position: fixed;
+  width: 320px;
+  height: 320px;
+  border-radius: 9999px;
+  background: radial-gradient(
+    circle,
+    rgba(250,204,21,0.18),
+    transparent 70%
+  );
+
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  filter: blur(40px);
+}
