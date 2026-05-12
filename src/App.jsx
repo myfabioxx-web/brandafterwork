@@ -333,42 +333,76 @@ return () => observer.disconnect();
           </button>
         </div>
 
-        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-  {contentItems.map((item, i) => (
-    <div
-      key={i}
-      className="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04] backdrop-blur-3xl transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] hover:-translate-y-6 hover:scale-[1.03] hover:border-yellow-400/40 hover:bg-white/[0.05] hover:shadow-[0_0_80px_rgba(250,204,21,0.22)] before:absolute before:inset-0 before:bg-[radial-gradient(circle_at_top,rgba(250,204,21,0.14),transparent_55%)] before:opacity-0 before:transition before:duration-700 hover:before:opacity-100"
-    >
-      <img
-        src={item.image}
-        className="h-48 w-full object-cover transition-all duration-1000 ease-out group-hover:scale-[1.18] group-hover:brightness-[0.55] md:h-52"
-        alt={item.title}  
-      />
+        <div className="grid gap-6 lg:grid-cols-[320px_1fr]">
 
-      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-90" />
-      <div className="absolute inset-0 opacity-0 transition duration-700 group-hover:opacity-100 bg-[linear-gradient(120deg,transparent,rgba(255,255,255,0.12),transparent)]" />
-      <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(255,255,255,0.08),transparent_40%)] opacity-0 transition duration-700 group-hover:opacity-100" />
+  <div className="space-y-4">
 
-      <div className="absolute -bottom-10 left-1/2 h-32 w-32 -translate-x-1/2 rounded-full bg-yellow-400/20 blur-3xl opacity-0 transition duration-500 group-hover:opacity-100" />
+    {contentItems.map((item, i) => (
+      <div
+        key={i}
+        className="group flex cursor-pointer gap-4 rounded-2xl border border-white/10 bg-white/[0.03] p-3 transition duration-500 hover:border-yellow-400/40 hover:bg-yellow-400/[0.05] hover:shadow-[0_0_45px_rgba(250,204,21,0.18)]"
+      >
+        <img
+          src={item.image}
+          className="h-24 w-32 rounded-xl object-cover"
+        />
 
-      <div className="absolute bottom-0 left-0 z-20 p-5">
-        <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-yellow-400/20 bg-yellow-400/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.18em] text-yellow-300 backdrop-blur-xl">
-      Trending Podcast
-      </div>
-        <h4 className="text-lg font-black leading-7 transition-all duration-300 group-hover:text-yellow-300 group-hover:drop-shadow-[0_0_18px_rgba(250,204,21,0.55)]">
-          {item.title}
-        </h4>
+        <div className="flex flex-col justify-between">
+          <div>
+            <p className="mb-2 text-[10px] uppercase tracking-[0.25em] text-yellow-400">
+              Trending Podcast
+            </p>
 
-        <div className="mt-5 flex items-center justify-between text-sm text-white/50">
-          <span>Podcast • 32:15</span>
+            <h4 className="text-sm font-bold leading-6 text-white group-hover:text-yellow-300">
+              {item.title}
+            </h4>
+          </div>
 
-          <button className="flex h-11 w-11 items-center justify-center rounded-full border border-yellow-400/30 bg-yellow-400/10 text-yellow-400 shadow-[0_0_20px_rgba(250,204,21,0.2)] transition duration-300 group-hover:scale-110">
-            <PlayCircle className="h-5 w-5" />
-          </button>
+          <span className="text-xs text-white/40">
+            32:15
+          </span>
         </div>
       </div>
+    ))}
+
+  </div>
+
+  <div className="group overflow-hidden rounded-[2rem] border border-white/10 bg-black/40 shadow-[0_0_80px_rgba(250,204,21,0.08)] transition duration-700 hover:border-yellow-400/30 hover:shadow-[0_0_120px_rgba(250,204,21,0.18)]">
+
+    <div className="relative">
+
+      <img
+        src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1600&auto=format&fit=crop"
+        className="h-[500px] w-full object-cover transition duration-[2500ms] group-hover:scale-105"
+      />
+
+      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" />
+
+      <button className="absolute left-1/2 top-1/2 flex h-24 w-24 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-yellow-400 text-black shadow-[0_0_80px_rgba(250,204,21,0.45)] transition duration-500 group-hover:scale-110">
+        <PlayCircle className="h-12 w-12" />
+      </button>
+
+      <div className="absolute bottom-0 left-0 p-8">
+        <p className="mb-3 text-sm uppercase tracking-[0.3em] text-yellow-400">
+          Featured Podcast
+        </p>
+
+        <h3 className="max-w-2xl text-4xl font-black leading-tight">
+          โลกยุคใหม่
+          <br />
+          กับไซเบอร์ใกล้ตัว
+        </h3>
+
+        <p className="mt-5 max-w-xl text-white/60">
+          ทำความเข้าใจภัยไซเบอร์ที่ใกล้ตัวกว่าที่คิด
+          และวิธีป้องกันตัวเองในโลกออนไลน์
+        </p>
+      </div>
+
     </div>
-  ))}
+
+  </div>
+
 </div>
       </section>
 
