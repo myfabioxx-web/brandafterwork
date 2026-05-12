@@ -256,7 +256,7 @@ export default function App() {
           <div className="absolute inset-0 z-10 bg-[radial-gradient(circle_at_top,rgba(250,204,21,0.12),transparent_45%)]" />
           <img
             src={heroImage}
-              className="w-full h-full object-cover animate-floatingHero animate-imageFade transition-all duration-[2000ms] ease-out group-hover:scale-[1.08] brightness-105 contrast-110 group-hover:scale-[1.12]" 
+             className="w-full h-full object-cover animate-floatingHero animate-imageFade transition-all duration-[2500ms] ease-out group-hover:scale-[1.12] group-hover:rotate-[0.6deg] brightness-105 contrast-110" 
             alt="Podcast studio"
           />
           <div className="absolute inset-0 opacity-0 transition duration-700 group-hover:opacity-100 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.12),transparent_45%)]" />
