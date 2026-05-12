@@ -188,25 +188,92 @@ return () => observer.disconnect();
           
         </div>
           {menuOpen && (
-  <div className="absolute left-0 top-full w-full border-b border-yellow-400/10 bg-black/95 backdrop-blur-3xl md:hidden animate-[fadeIn_.35s_ease]">
-    <div className="flex flex-col gap-5 px-6 py-6 text-sm font-bold">
-      <a className="text-yellow-400">หน้าแรก</a>
+  <div className="fixed inset-0 z-[999] bg-black/80 backdrop-blur-2xl md:hidden">
 
-      <a
-        href="#podcast" onClick={() => setMenuOpen(false)}
-        className="text-white/70 hover:text-yellow-400"
-      >
-        Podcast
-      </a>
+    <div className="absolute right-0 top-0 h-full w-[85%] border-l border-yellow-400/10 bg-[#07090c] shadow-[-20px_0_80px_rgba(250,204,21,0.08)]">
 
-      <a onClick={() => setMenuOpen(false)} className="text-white/70 hover:text-yellow-400">
-        บทความ
-      </a>
+      <div className="flex items-center justify-between border-b border-white/10 px-6 py-5">
 
-      <a onClick={() => setMenuOpen(false)} className="text-white/70 hover:text-yellow-400">
-        เกี่ยวกับเรา
-      </a>
+        <div>
+          <h2 className="text-lg font-black">
+            สมอง<span className="text-yellow-400">หลังเลิกงาน</span>
+          </h2>
+
+          <p className="mt-1 text-[10px] uppercase tracking-[0.3em] text-white/40">
+            Content • Podcast • Ideas
+          </p>
+        </div>
+
+        <button
+          onClick={() => setMenuOpen(false)}
+          className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5"
+        >
+          <X className="h-5 w-5 text-white" />
+        </button>
+
+      </div>
+
+      <div className="flex flex-col gap-3 p-6">
+
+        <a className="rounded-2xl bg-yellow-400 px-5 py-4 font-bold text-black shadow-[0_0_35px_rgba(250,204,21,0.35)]">
+          หน้าแรก
+        </a>
+
+        <a className="rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-4 font-bold text-white/70 transition duration-300 hover:border-yellow-400/30 hover:text-yellow-400">
+          Podcast
+        </a>
+
+        <a className="rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-4 font-bold text-white/70 transition duration-300 hover:border-yellow-400/30 hover:text-yellow-400">
+          บทความ
+        </a>
+
+        <a className="rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-4 font-bold text-white/70 transition duration-300 hover:border-yellow-400/30 hover:text-yellow-400">
+          เกี่ยวกับเรา
+        </a>
+
+      </div>
+
+      <div className="absolute bottom-0 left-0 w-full border-t border-white/10 p-6">
+
+        <div className="mb-4 flex gap-3">
+
+          <a
+            href="https://www.youtube.com/@Brainafterwork"
+            target="_blank"
+            rel="noreferrer"
+            className="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/[0.04]"
+          >
+            <MonitorPlay className="h-5 w-5 text-white/70" />
+          </a>
+
+          <a
+            href="https://www.facebook.com/share/1A1yY6TTXP/"
+            target="_blank"
+            rel="noreferrer"
+            className="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/[0.04]"
+          >
+            <BadgeInfo className="h-5 w-5 text-white/70" />
+          </a>
+
+          <a
+            href="https://tiktok.com/@brainafterw0rk"
+            target="_blank"
+            rel="noreferrer"
+            className="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/[0.04]"
+          >
+            <Music2 className="h-5 w-5 text-white/70" />
+          </a>
+
+        </div>
+
+        <p className="text-sm text-white/40">
+          © 2026 สมองหลังเลิกงาน
+        </p>
+
+      </div>
+
     </div>
+
   </div>
 )}
       </nav>
