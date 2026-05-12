@@ -103,7 +103,7 @@ export default function App() {
           <div className="absolute left-[20%] top-[80%] h-2 w-2 rounded-full bg-yellow-300/20 blur-[1px]" />
       </div>
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(250,204,21,0.06),transparent_35%)] blur-3xl" />
-        <nav className="sticky top-0 z-50 before:absolute before:inset-0 before:bg-[linear-gradient(to_right,transparent,rgba(255,255,255,0.06),transparent)] before:opacity-40 border-b border-yellow-400/10 bg-black/20 backdrop-blur-[30px] shadow-[0_10px_100px_rgba(250,204,21,0.08)] supports-[backdrop-filter]:bg-black/20">
+        <nav className="sticky top-0 z-50 before:absolute before:inset-0 before:bg-[linear-gradient(to_right,transparent,rgba(255,255,255,0.06),transparent)] before:opacity-40 border-b border-yellow-400/10 bg-black/30 backdrop-blur-[40px] shadow-[0_10px_120px_rgba(250,204,21,0.12)] supports-[backdrop-filter]:bg-black/20 before:backdrop-blur-xl">
           <div className="absolute inset-0 bg-[linear-gradient(to_right,transparent,rgba(250,204,21,0.06),transparent)]" />
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-4 md:px-6">
           <div className="flex min-w-0 items-center gap-3">
