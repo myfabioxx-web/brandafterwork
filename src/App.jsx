@@ -162,6 +162,28 @@ export default function App() {
             </a>
           </div>
         </div>
+          {menuOpen && (
+  <div className="absolute left-0 top-full w-full border-b border-yellow-400/10 bg-black/95 backdrop-blur-3xl md:hidden">
+    <div className="flex flex-col gap-5 px-6 py-6 text-sm font-bold">
+      <a className="text-yellow-400">หน้าแรก</a>
+
+      <a
+        href="#podcast"
+        className="text-white/70 hover:text-yellow-400"
+      >
+        Podcast
+      </a>
+
+      <a className="text-white/70 hover:text-yellow-400">
+        บทความ
+      </a>
+
+      <a className="text-white/70 hover:text-yellow-400">
+        เกี่ยวกับเรา
+      </a>
+    </div>
+  </div>
+)}
       </nav>
 
       <section className="relative overflow-hidden mx-auto grid max-w-7xl gap-8 px-4 py-10 md:px-6 md:py-16 lg:grid-cols-2">
