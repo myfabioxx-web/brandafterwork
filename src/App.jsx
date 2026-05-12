@@ -354,7 +354,7 @@ export default function App() {
           </div>
         </div>
       </section>
-       <section className="mx-auto max-w-7xl px-4 py-16 md:px-6">
+       <section className="reveal mx-auto max-w-7xl px-4 py-16 md:px-6">
           <div className="mb-8 flex items-center justify-between">
           <h3 className="text-3xl font-black md:text-5xl">
            Podcast<span className="text-yellow-400"> ล่าสุด</span>
