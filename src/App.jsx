@@ -13,6 +13,25 @@ import heroImage from "./hero.png";
 
 export default function App() {
   const [loading, setLoading] = useState(true);
+  useEffect(() => {
+  const moveGlow = (e) => {
+    document.documentElement.style.setProperty(
+      "--x",
+      `${e.clientX}px`
+    );
+
+    document.documentElement.style.setProperty(
+      "--y",
+      `${e.clientY}px`
+    );
+  };
+
+  window.addEventListener("mousemove", moveGlow);
+
+  return () => {
+    window.removeEventListener("mousemove", moveGlow);
+  };
+}, []);
 
   useEffect(() => {
   const timer = setTimeout(() => {
