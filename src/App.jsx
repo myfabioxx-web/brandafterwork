@@ -18,7 +18,29 @@ useEffect(() => {
   const timer = setTimeout(() => {
     setLoading(false);
   }, 2200);
+  if (loading) {
+  return (
+    <div className="flex min-h-screen items-center justify-center bg-[#050607] text-white">
+      <div className="text-center">
+        <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full border border-yellow-400/30 bg-yellow-400/10 shadow-[0_0_60px_rgba(250,204,21,0.18)]">
+          <Brain className="h-10 w-10 text-yellow-400 animate-pulse" />
+        </div>
 
+        <h1 className="text-3xl font-black">
+          สมอง<span className="text-yellow-400">หลังเลิกงาน</span>
+        </h1>
+
+        <p className="mt-3 text-sm uppercase tracking-[0.3em] text-white/40">
+          Content • Podcast • Ideas
+        </p>
+
+        <div className="mt-8 h-1 w-64 overflow-hidden rounded-full bg-white/10">
+          <div className="h-full w-full animate-[loadingBar_2s_linear] bg-gradient-to-r from-yellow-300 to-yellow-500" />
+        </div>
+      </div>
+    </div>
+  );
+}
   return () => clearTimeout(timer);
 }, []);
   useEffect(() => {
