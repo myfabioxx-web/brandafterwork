@@ -19,6 +19,11 @@ export default function App() {
   const [cursor, setCursor] = useState({
   x: 0,
   y: 0,
+    const [stats, setStats] = useState({
+  followers: 0,
+  podcasts: 0,
+  views: 0,
+});
 });
   useEffect(() => {
   const moveGlow = (e) => {
@@ -95,6 +100,37 @@ return () => observer.disconnect();
     </div>
   );
 }
+useEffect(() => {
+  let followers = 0;
+  let podcasts = 0;
+  let views = 0;
+
+  const interval = setInterval(() => {
+    followers += 1200;
+    podcasts += 5;
+    views += 100000;
+
+    if (followers >= 120000) followers = 120000;
+    if (podcasts >= 350) podcasts = 350;
+    if (views >= 10000000) views = 10000000;
+
+    setStats({
+      followers,
+      podcasts,
+      views,
+    });
+
+    if (
+      followers === 120000 &&
+      podcasts === 350 &&
+      views === 10000000
+    ) {
+      clearInterval(interval);
+    }
+  }, 30);
+
+  return () => clearInterval(interval);
+}, []);
   const contentItems = [
     {
       title: "AI จะเปลี่ยนโลกการทำงานไปแล้ว",
