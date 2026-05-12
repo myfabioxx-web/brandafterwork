@@ -136,31 +136,36 @@ export default function App() {
              เกี่ยวกับเรา
             </a>
           </div>
+           <div className="flex shrink-0 items-center gap-2 md:gap-3">
 
-          <div className="flex shrink-0 items-center gap-2 md:gap-3">
-            <button className="hidden h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 md:flex md:h-11 md:w-11">
-              <Search className="h-5 w-5 text-white/70" />
-            </button>
+  <button className="hidden h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 md:flex md:h-11 md:w-11">
+    <Search className="h-5 w-5 text-white/70" />
+  </button>
 
-            <a
-              href="https://www.youtube.com/@Brainafterwork"
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-2xl bg-gradient-to-r from-yellow-300 via-yellow-400 to-yellow-500 px-5 py-3 text-sm font-black text-black transition-all duration-300 hover:scale-105 hover:shadow-[0_0_45px_rgba(250,204,21,0.55)] hover:brightness-110 md:px-6 md:text-base"
-            >
-              <button
-               onClick={() => setMenuOpen(!menuOpen)}
-               className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 md:hidden"
-              >
-              {menuOpen ? (
-              <X className="h-5 w-5 text-white" />
-               ) : (
-               <Menu className="h-5 w-5 text-white" />
-                )}
-              </button>
-              ติดตาม
-            </a>
-          </div>
+  {/* ปุ่มเมนูมือถือ */}
+  <button
+    onClick={() => setMenuOpen(!menuOpen)}
+    className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 md:hidden"
+  >
+    {menuOpen ? (
+      <X className="h-5 w-5 text-white" />
+    ) : (
+      <Menu className="h-5 w-5 text-white" />
+    )}
+  </button>
+
+  {/* ปุ่มติดตาม */}
+  <a
+    href="https://www.youtube.com/@Brainafterwork"
+    target="_blank"
+    rel="noreferrer"
+    className="rounded-2xl bg-gradient-to-r from-yellow-300 via-yellow-400 to-yellow-500 px-5 py-3 text-sm font-black text-black transition-all duration-300 hover:scale-105 hover:shadow-[0_0_45px_rgba(250,204,21,0.55)] hover:brightness-110 md:px-6 md:text-base"
+  >
+    ติดตาม
+  </a>
+
+</div>
+          
         </div>
           {menuOpen && (
   <div className="absolute left-0 top-full w-full border-b border-yellow-400/10 bg-black/95 backdrop-blur-3xl md:hidden">
