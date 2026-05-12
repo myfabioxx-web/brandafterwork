@@ -277,3 +277,18 @@ button:hover {
   --x: 50%;
   --y: 50%;
 }
+@keyframes smoothAppear {
+  from {
+    opacity: 0;
+    transform: scale(1.02);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-smoothAppear {
+  animation: smoothAppear 1.4s ease;
+}
