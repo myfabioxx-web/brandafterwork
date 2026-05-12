@@ -34,10 +34,15 @@ useEffect(() => {
 
   return () => observer.disconnect();
 }, []);
+  useEffect(() => {
   const timer = setTimeout(() => {
     setLoading(false);
   }, 2200);
-  if (loading) {
+
+  return () => clearTimeout(timer);
+}, []);
+
+if (loading) {
   return (
     <div className="flex min-h-screen items-center justify-center bg-[#050607] text-white">
       <div className="text-center">
@@ -60,8 +65,6 @@ useEffect(() => {
     </div>
   );
 }
-  return () => clearTimeout(timer);
-}, []);
   useEffect(() => {
   const moveGlow = (e) => {
     document.documentElement.style.setProperty(
