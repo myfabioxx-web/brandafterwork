@@ -309,3 +309,81 @@ transform 1s ease;
 opacity: 1;
 transform: translateY(0);
 }
+@keyframes floatingHero {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-floatingHero {
+  animation: floatingHero 7s ease-in-out infinite;
+}
+
+@keyframes floatGlow {
+  0% {
+    transform: translateY(0px) scale(1);
+    opacity: 0.45;
+  }
+
+  50% {
+    transform: translateY(-20px) scale(1.08);
+    opacity: 0.75;
+  }
+
+  100% {
+    transform: translateY(0px) scale(1);
+    opacity: 0.45;
+  }
+}
+
+.animate-floatGlow {
+  animation: floatGlow 8s ease-in-out infinite;
+}
+
+@keyframes textGlow {
+  0% {
+    text-shadow: 0 0 0px rgba(250,204,21,0);
+  }
+
+  50% {
+    text-shadow:
+      0 0 25px rgba(250,204,21,0.35),
+      0 0 60px rgba(250,204,21,0.15);
+  }
+
+  100% {
+    text-shadow: 0 0 0px rgba(250,204,21,0);
+  }
+}
+
+.animate-textGlow {
+  animation: textGlow 5s ease-in-out infinite;
+}
+
+@keyframes smoothAppear {
+  from {
+    opacity: 0;
+    transform: scale(1.02);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-smoothAppear {
+  animation: smoothAppear 1.2s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
