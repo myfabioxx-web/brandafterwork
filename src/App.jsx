@@ -92,8 +92,8 @@ export default function App() {
     <div className="pointer-events-none fixed inset-0 z-30 bg-[radial-gradient(circle_at_top,rgba(250,204,21,0.08),transparent_28%),radial-gradient(circle_at_bottom,rgba(255,180,0,0.04),transparent_30%)]" />
       <div className="pointer-events-none fixed inset-0 bg-[radial-gradient(circle_at_center,rgba(250,204,21,0.05),transparent_40%)]" />
     <div className="pointer-events-none fixed inset-0 opacity-[0.03] animate-grain mix-blend-soft-light bg-[url('https://www.transparenttextures.com/patterns/asfalt-dark.png')]" />
-      <div className="background-grid relative min-h-screen animate-smoothAppear before:absolute before:inset-0 before:pointer-events-none before:bg-[radial-gradient(circle_at_center,rgba(250,204,21,0.12),transparent_220px)] bg-[radial-gradient(circle_at_top,rgba(250,204,21,0.08),#050607_38%),linear-gradient(to_bottom,#050607,#07090c)] text-white">
-      <div className="pointer-events-none absolute inset-0 overflow-hidden">
+          <div className="background-grid relative min-h-screen animate-smoothAppear before:absolute before:inset-0 before:pointer-events-none before:bg-[radial-gradient(circle_at_var(--x)_var(--y),rgba(250,204,21,0.12),transparent_220px)] bg-[radial-gradient(circle_at_top,rgba(250,204,21,0.08),#050607_38%),linear-gradient(to_bottom,#050607,#07090c)] text-white">
+          <div className="pointer-events-none absolute inset-0 overflow-hidden">
           <div className="absolute left-[10%] top-[20%] h-2 w-2 rounded-full bg-yellow-300/40 blur-[1px]" />
           <div className="absolute left-[75%] top-[30%] h-3 w-3 rounded-full bg-yellow-200/30 blur-[2px]" />
           <div className="absolute left-[60%] top-[70%] h-2 w-2 rounded-full bg-yellow-400/30 blur-[1px]" />
