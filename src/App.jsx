@@ -4,8 +4,8 @@ import {
   BookOpen,
   Search,
   Mail,
-  Youtube,
-  Facebook,
+  MonitorPlay,
+  BadgeInfo,
   Music2,
 } from "lucide-react";
 import { useEffect } from "react";
@@ -164,10 +164,10 @@ export default function App() {
 
           <div className="mt-7 flex gap-3 md:mt-8">
             <a href="https://www.youtube.com/@Brainafterwork" target="_blank" rel="noreferrer" className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 transition duration-300 hover:scale-110 hover:border-yellow-400/40 hover:bg-yellow-400/10 hover:shadow-[0_0_25px_rgba(250,204,21,0.25)]">
-              <Youtube className="h-5 w-5 text-white/70" />
+              <MonitorPlay className="h-5 w-5 text-white/70" />
             </a>
             <a href="https://www.facebook.com/share/1A1yY6TTXP/" target="_blank" rel="noreferrer" className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 transition duration-300 hover:scale-110 hover:border-yellow-400/40 hover:bg-yellow-400/10 hover:shadow-[0_0_25px_rgba(250,204,21,0.25)]">
-              <Facebook className="h-5 w-5 text-white/70" />
+              <BadgeInfo className="h-5 w-5 text-white/70" />
             </a>
             <a href="https://tiktok.com/@brainafterw0rk" target="_blank" rel="noreferrer" className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 transition duration-300 hover:scale-110 hover:border-yellow-400/40 hover:bg-yellow-400/10 hover:shadow-[0_0_25px_rgba(250,204,21,0.25)]">
               <Music2 className="h-5 w-5 text-white/70" />
@@ -339,10 +339,10 @@ export default function App() {
             <h4 className="mb-4 font-black">ติดตาม</h4>
             <div className="flex gap-3">
               <a href="https://www.youtube.com/@Brainafterwork" target="_blank" rel="noreferrer" className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5">
-                <Youtube className="h-5 w-5 text-white/70" />
+                <MonitorPlay className="h-5 w-5 text-white/70" />
               </a>
               <a href="https://www.facebook.com/share/1A1yY6TTXP/" target="_blank" rel="noreferrer" className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5">
-                <Facebook className="h-5 w-5 text-white/70" />
+                <BagdeInfo className="h-5 w-5 text-white/70" />
               </a>
               <a href="https://tiktok.com/@brainafterw0rk" target="_blank" rel="noreferrer" className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5">
                 <Music2 className="h-5 w-5 text-white/70" />
