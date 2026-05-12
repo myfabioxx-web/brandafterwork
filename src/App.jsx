@@ -246,6 +246,37 @@ export default function App() {
               <Mail className="h-5 w-5 text-white/70" />
             </a>
           </div>
+             <div className="mt-10 grid grid-cols-3 gap-4 md:max-w-xl">
+  <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-4 backdrop-blur-xl">
+    <p className="text-3xl font-black text-yellow-400">
+      120K+
+    </p>
+
+    <p className="mt-1 text-sm text-white/50">
+      ผู้ติดตามรวม
+    </p>
+  </div>
+
+  <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-4 backdrop-blur-xl">
+    <p className="text-3xl font-black text-yellow-400">
+      350+
+    </p>
+
+    <p className="mt-1 text-sm text-white/50">
+      Podcast
+    </p>
+  </div>
+
+  <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-4 backdrop-blur-xl">
+    <p className="text-3xl font-black text-yellow-400">
+      10M+
+    </p>
+
+    <p className="mt-1 text-sm text-white/50">
+      Views
+    </p>
+  </div>
+</div>
         </div>
 
         <div className="group relative overflow-hidden rounded-[2.5rem] animate-borderGlow border border-white/10 bg-black shadow-[0_0_100px_rgba(250,204,21,0.12)] transition duration-700 hover:shadow-[0_0_120px_rgba(250,204,21,0.18)] md:rounded-[2.5rem] hover:[transform:perspective(1400px)_rotateX(2deg)_rotateY(-6deg)_scale(1.02)]">
