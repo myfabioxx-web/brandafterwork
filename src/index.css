@@ -297,3 +297,15 @@ button:hover {
   --x: 50%;
   --y: 50%;
 }
+.reveal {
+opacity: 0;
+transform: translateY(70px);
+transition:
+opacity 1s ease,
+transform 1s ease;
+}
+
+.reveal.active {
+opacity: 1;
+transform: translateY(0);
+}
