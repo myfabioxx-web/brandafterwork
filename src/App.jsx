@@ -247,7 +247,7 @@ export default function App() {
             </a>
           </div>
              <div className="mt-10 grid grid-cols-3 gap-4 md:max-w-xl">
-  <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-4 backdrop-blur-xl">
+  className="rounded-2xl border border-white/10 bg-white/[0.03] p-4 backdrop-blur-xl transition duration-500 hover:-translate-y-2 hover:border-yellow-400/30 hover:shadow-[0_0_40px_rgba(250,204,21,0.18)]"
     <p className="text-3xl font-black text-yellow-400">
       120K+
     </p>
