@@ -294,7 +294,7 @@ useEffect(() => {
 </div>
       </section>
 
-      <section className="fade-section mx-auto max-w-7xl px-4 pb-16 md:px-6 md:pb-20">
+      <section className="reveal mx-auto max-w-7xl px-4 pb-16 md:px-6 md:pb-20">
         <div className="grid overflow-hidden rounded-[1.5rem] transition duration-500 hover:-translate-y-2 hover:shadow-[0_0_80px_rgba(250,204,21,0.12)] border border-white/10 bg-white/[0.03] md:rounded-[2rem] lg:grid-cols-2">
           <div className="p-6 md:p-10">
             <p className="mb-3 text-sm font-bold uppercase tracking-[0.3em] text-yellow-400">
