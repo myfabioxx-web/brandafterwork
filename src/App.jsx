@@ -1,5 +1,7 @@
 import {
   Brain,
+  Menu,
+  X,
   PlayCircle,
   BookOpen,
   Search,
@@ -13,6 +15,7 @@ import heroImage from "./hero.png";
 
 export default function App() {
   const [loading, setLoading] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
   useEffect(() => {
   const moveGlow = (e) => {
     document.documentElement.style.setProperty(
