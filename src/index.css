@@ -273,3 +273,7 @@ button:hover {
 
   background-size: 40px 40px;
 }
+:root {
+  --x: 50%;
+  --y: 50%;
+}
