@@ -249,6 +249,7 @@ useEffect(() => {
       />
 
       <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-90" />
+      <div className="absolute inset-0 opacity-0 transition duration-700 group-hover:opacity-100 bg-[linear-gradient(120deg,transparent,rgba(255,255,255,0.12),transparent)]" />
       <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(255,255,255,0.08),transparent_40%)] opacity-0 transition duration-700 group-hover:opacity-100" />
 
       <div className="absolute -bottom-10 left-1/2 h-32 w-32 -translate-x-1/2 rounded-full bg-yellow-400/20 blur-3xl opacity-0 transition duration-500 group-hover:opacity-100" />
