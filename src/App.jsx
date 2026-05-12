@@ -194,7 +194,7 @@ export default function App() {
             Content • Podcast • Ideas
           </p>
 
-          <h2 className="animate-textGlow text-[2.35rem] font-black leading-[1.05] tracking-[-0.03em] md:text-7xl md:leading-[0.95]">
+          <h2 className="animate-textGlow drop-shadow-[0_0_35px_rgba(250,204,21,0.18)] text-[2.35rem] font-black leading-[1.05] tracking-[-0.03em] md:text-7xl md:leading-[0.95]">
             เข้าใจโลกให้ทัน
             <br />
             ใช้เทคโนโลยีให้เป็น
