@@ -168,22 +168,22 @@ export default function App() {
           
         </div>
           {menuOpen && (
-  <div className="absolute left-0 top-full w-full border-b border-yellow-400/10 bg-black/95 backdrop-blur-3xl md:hidden">
+  <div className="absolute left-0 top-full w-full border-b border-yellow-400/10 bg-black/95 backdrop-blur-3xl md:hidden animate-[fadeIn_.35s_ease]">
     <div className="flex flex-col gap-5 px-6 py-6 text-sm font-bold">
       <a className="text-yellow-400">หน้าแรก</a>
 
       <a
-        href="#podcast"
+        href="#podcast" onClick={() => setMenuOpen(false)}
         className="text-white/70 hover:text-yellow-400"
       >
         Podcast
       </a>
 
-      <a className="text-white/70 hover:text-yellow-400">
+      <a onClick={() => setMenuOpen(false)} className="text-white/70 hover:text-yellow-400">
         บทความ
       </a>
 
-      <a className="text-white/70 hover:text-yellow-400">
+      <a onClick={() => setMenuOpen(false)} className="text-white/70 hover:text-yellow-400">
         เกี่ยวกับเรา
       </a>
     </div>
