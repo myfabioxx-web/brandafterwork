@@ -31,6 +31,10 @@ export default function App() {
       "--y",
       `${e.clientY}px`
     );
+    setCursor({
+  x: e.clientX,
+  y: e.clientY,
+});
   };
 
   window.addEventListener("mousemove", moveGlow);
