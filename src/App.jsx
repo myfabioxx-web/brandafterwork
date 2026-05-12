@@ -24,7 +24,6 @@ export default function App() {
   podcasts: 0,
   views: 0,
 });
-});
   useEffect(() => {
   const moveGlow = (e) => {
     document.documentElement.style.setProperty(
