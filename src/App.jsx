@@ -119,7 +119,14 @@ return () => observer.disconnect();
   ];
 
   return (
-    <>
+  <>
+    <div
+      className="cursor-glow"
+      style={{
+        left: cursor.x,
+        top: cursor.y,
+      }}
+    />
     <div className="pointer-events-none fixed inset-0 z-30 bg-[radial-gradient(circle_at_top,rgba(250,204,21,0.08),transparent_28%),radial-gradient(circle_at_bottom,rgba(255,180,0,0.04),transparent_30%)]" />
       <div className="pointer-events-none fixed inset-0 bg-[radial-gradient(circle_at_center,rgba(250,204,21,0.05),transparent_40%)]" />
     <div className="pointer-events-none fixed inset-0 opacity-[0.03] animate-grain mix-blend-soft-light bg-[url('https://www.transparenttextures.com/patterns/asfalt-dark.png')]" />
