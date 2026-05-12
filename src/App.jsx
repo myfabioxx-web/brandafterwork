@@ -8,10 +8,19 @@ import {
   BadgeInfo,
   Music2,
 } from "lucide-react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import heroImage from "./hero.png";
 
 export default function App() {
+  const [loading, setLoading] = useState(true);
+
+useEffect(() => {
+  const timer = setTimeout(() => {
+    setLoading(false);
+  }, 2200);
+
+  return () => clearTimeout(timer);
+}, []);
   useEffect(() => {
   const moveGlow = (e) => {
     document.documentElement.style.setProperty(
