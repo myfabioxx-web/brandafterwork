@@ -226,3 +226,12 @@ button:hover {
 
   background-size: 60px 60px;
 }
+@keyframes loadingBar {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
