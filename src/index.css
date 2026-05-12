@@ -2,6 +2,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  background: #050607;
+}
 
 :root {
   font-family: 'Inter', sans-serif;
@@ -441,4 +449,16 @@ html {
   transform: translate(-50%, -50%);
   z-index: 9999;
   filter: blur(40px);
+}
+.fade-section {
+  opacity: 0;
+  transform: translateY(80px) scale(0.98);
+  transition:
+    opacity 1.2s ease,
+    transform 1.2s ease;
+}
+
+.fade-section.active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
 }
